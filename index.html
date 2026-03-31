@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黑天鹅事件档案馆 | Black Swan Archive</title>
+  <meta name="description" content="基于塔勒布黑天鹅理论的历史黑天鹅事件数据库与排行榜 | A database and ranking of historical Black Swan events based on Taleb's theory">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦢</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <svg class="swan-icon" viewBox="0 0 40 40" fill="currentColor">
+          <path d="M20 4c-2 0-3.5 1.5-4 3-0.5 1.5-0.3 3 0.5 4.2C14 12 12 14 11 16.5c-1.5 3.5-1 7 1 10 1.5 2.3 4 4 7 4.8v3.7c-3 0.3-5.5 1-7 2h18c-1.5-1-4-1.7-7-2v-3.7c3-0.8 5.5-2.5 7-4.8 2-3 2.5-6.5 1-10-1-2.5-3-4.5-5.5-5.3 0.8-1.2 1-2.7 0.5-4.2C23.5 5.5 22 4 20 4z"/>
+        </svg>
+        <span class="nav-title" data-i18n="siteTitle"></span>
+      </a>
+      <div class="nav-links">
+        <a href="#events" data-i18n="navEvents"></a>
+        <a href="#rankings" data-i18n="navRankings"></a>
+        <a href="#potential" data-i18n="navPotential"></a>
+        <a href="#about" data-i18n="navAbout"></a>
+        <button id="langToggle" class="lang-btn" onclick="toggleLang()">EN</button>
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#events" data-i18n="navEvents" onclick="closeMobileMenu()"></a>
+      <a href="#rankings" data-i18n="navRankings" onclick="closeMobileMenu()"></a>
+      <a href="#potential" data-i18n="navPotential" onclick="closeMobileMenu()"></a>
+      <a href="#about" data-i18n="navAbout" onclick="closeMobileMenu()"></a>
+      <button id="langToggleMobile" class="lang-btn" onclick="toggleLang()">EN</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-bg">
+      <div class="feather feather-1"></div>
+      <div class="feather feather-2"></div>
+      <div class="feather feather-3"></div>
+      <div class="feather feather-4"></div>
+      <div class="feather feather-5"></div>
+      <div class="ripple ripple-1"></div>
+      <div class="ripple ripple-2"></div>
+      <div class="ripple ripple-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-swan">
+        <svg viewBox="0 0 200 200" class="hero-swan-svg">
+          <path d="M100 20 C85 20 75 35 72 50 C68 68 75 85 85 95 C70 100 55 110 48 125 C38 145 42 165 58 178 C70 188 88 192 100 192 C112 192 130 188 142 178 C158 165 162 145 152 125 C145 110 130 100 115 95 C125 85 132 68 128 50 C125 35 115 20 100 20Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+          <path d="M100 30 C90 30 83 42 80 52 C77 65 82 78 90 87 C78 92 67 102 62 115 C54 132 57 150 70 160 C80 168 92 172 100 172 C108 172 120 168 130 160 C143 150 146 132 138 115 C133 102 122 92 110 87 C118 78 123 65 120 52 C117 42 110 30 100 30Z" fill="currentColor" opacity="0.08"/>
+        </svg>
+      </div>
+      <h1 data-i18n="siteTitle" class="hero-title"></h1>
+      <p data-i18n="siteSubtitle" class="hero-subtitle"></p>
+      <blockquote class="hero-quote">
+        <p data-i18n="heroQuote"></p>
+        <cite data-i18n="heroAuthor"></cite>
+      </blockquote>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- Events Section -->
+  <section id="events" class="section">
+    <div class="container">
+      <h2 data-i18n="navEvents" class="section-title"></h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all" data-i18n="filterAll"></button>
+        <button class="filter-btn" data-filter="world"></button>
+        <button class="filter-btn" data-filter="continental"></button>
+        <button class="filter-btn" data-filter="national"></button>
+        <button class="filter-btn" data-filter="industry"></button>
+        <button class="filter-btn" data-filter="institutional"></button>
+        <button class="filter-btn" data-filter="personal"></button>
+      </div>
+      <div id="eventsGrid" class="events-grid"></div>
+    </div>
+  </section>
+
+  <!-- Rankings Section -->
+  <section id="rankings" class="section section-dark">
+    <div class="container">
+      <h2 data-i18n="navRankings" class="section-title"></h2>
+      <div class="ranking-tabs">
+        <button class="ranking-tab active" data-rank="total" data-i18n="rankByTotal"></button>
+        <button class="ranking-tab" data-rank="unpredictability" data-i18n="rankByUnpredictability"></button>
+        <button class="ranking-tab" data-rank="impact" data-i18n="rankByImpact"></button>
+        <button class="ranking-tab" data-rank="retrospectiveExplainability" data-i18n="rankByExplainability"></button>
+      </div>
+      <div id="rankingTable" class="ranking-table-wrapper"></div>
+    </div>
+  </section>
+
+  <!-- Potential Black Swans -->
+  <section id="potential" class="section">
+    <div class="container">
+      <h2 data-i18n="potentialTitle" class="section-title"></h2>
+      <p data-i18n="potentialSubtitle" class="section-subtitle"></p>
+      <div id="potentialGrid" class="potential-grid"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-dark">
+    <div class="container">
+      <h2 data-i18n="aboutTitle" class="section-title"></h2>
+      <div class="about-content">
+        <p data-i18n="aboutText1"></p>
+        <p data-i18n="aboutText2"></p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 data-i18n="feature1Title"></h3>
+            <p data-i18n="feature1Text"></p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 data-i18n="feature2Title"></h3>
+            <p data-i18n="feature2Text"></p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </div>
+            <h3 data-i18n="feature3Title"></h3>
+            <p data-i18n="feature3Text"></p>
+          </div>
+        </div>
+        <p data-i18n="aboutText3"></p>
+        <div class="scoring-box">
+          <h3 data-i18n="scoring"></h3>
+          <p data-i18n="scoringText"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-swan">
+        <svg viewBox="0 0 60 30" fill="currentColor" opacity="0.3">
+          <path d="M30 2c-3 0-5 2-6 5-0.5 2 0 4 1 5.5-3 1-5 3-7 6-2 4-1.5 8 1 11 2 2.5 5 4.5 8 5.5h6c3-1 6-3 8-5.5 2.5-3 3-7 1-11-2-3-4-5-7-6 1-1.5 1.5-3.5 1-5.5C35 4 33 2 30 2z"/>
+        </svg>
+      </div>
+      <p data-i18n="footer"></p>
+      <p style="margin-top:0.5rem;opacity:0.5;font-size:0.8rem;">&copy; 2024 Black Swan Archive</p>
+    </div>
+  </footer>
+
+  <!-- Event Modal -->
+  <div id="eventModal" class="modal" onclick="if(event.target===this)closeModal()">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
