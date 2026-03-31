@@ -1,7 +1,8 @@
 // Black Swan Events Database
 // Scores: 1-10 scale
 // - unpredictability: How unlikely/unexpected was this before it happened? (10 = completely unforeseeable)
-// - impact: How large was the impact? (10 = changed the world)
+// - impact: How much real-world STRUCTURAL CHANGE did it cause? (10 = permanently reshaped the world)
+//   NOT media attention or emotional shock. Measures lasting change in systems, institutions, borders, industries, or how people live.
 // - retrospectiveExplainability: How easily explained in hindsight? (10 = "obvious" in retrospect)
 
 const BLACK_SWAN_EVENTS = [
@@ -72,7 +73,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On December 26, 2004, a 9.1 magnitude earthquake in the Indian Ocean triggered a tsunami that struck 14 countries, killing approximately 230,000 people — one of the deadliest natural disasters on record."
     },
     unpredictability: 9,
-    impact: 9,
+    impact: 7,
     retrospectiveExplainability: 6,
     wikiLink: "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami"
   },
@@ -314,7 +315,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On March 11, 2011, a 9.0 earthquake and tsunami struck northeastern Japan, killing nearly 20,000 and triggering the Fukushima nuclear disaster. Japan's economy was severely damaged and global supply chains were disrupted."
     },
     unpredictability: 7,
-    impact: 9,
+    impact: 7,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami"
   },
@@ -400,7 +401,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In 2017, Bitcoin surged from under $1,000 to nearly $20,000, triggering a global cryptocurrency frenzy. It created overnight millionaires and forced traditional finance to take blockchain and crypto assets seriously."
     },
     unpredictability: 8,
-    impact: 7,
+    impact: 6,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Cryptocurrency_bubble"
   },
@@ -428,7 +429,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On April 20, 2020, WTI crude oil May futures turned negative for the first time in history, hitting -$37.63/barrel. Traders had to pay others to take oil off their hands — an outcome no one had imagined possible."
     },
     unpredictability: 10,
-    impact: 7,
+    impact: 3,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/2020_Russia%E2%80%93Saudi_Arabia_oil_price_war"
   },
@@ -442,7 +443,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In January 2021, Reddit retail investors collectively bought GameStop stock, pushing it from ~$20 to nearly $500, causing massive hedge fund losses. The event revealed social media's disruptive power over financial markets."
     },
     unpredictability: 9,
-    impact: 6,
+    impact: 3,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/GameStop_short_squeeze"
   },
@@ -472,7 +473,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On September 15, 2008, Lehman Brothers — a 158-year-old investment bank — filed for bankruptcy, the largest in US history. This triggered the global financial tsunami and became the defining moment of the 2008 financial crisis."
     },
     unpredictability: 7,
-    impact: 10,
+    impact: 9,
     retrospectiveExplainability: 9,
     wikiLink: "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers"
   },
@@ -500,7 +501,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In 1995, Barings Bank — Britain's oldest merchant bank — collapsed due to rogue trader Nick Leeson's unauthorized futures trading in Singapore. Leeson's losses of £827 million exceeded the bank's entire capital."
     },
     unpredictability: 8,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Barings_Bank"
   },
@@ -528,7 +529,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On March 8, 2014, Malaysia Airlines Flight 370 disappeared en route from Kuala Lumpur to Beijing with 239 people on board. Despite extensive searches, the aircraft has never been found — one of aviation's greatest mysteries."
     },
     unpredictability: 10,
-    impact: 6,
+    impact: 2,
     retrospectiveExplainability: 3,
     wikiLink: "https://en.wikipedia.org/wiki/Malaysia_Airlines_Flight_370"
   },
@@ -542,7 +543,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On March 10, 2023, Silicon Valley Bank — the 16th largest US bank — collapsed within two days due to a bank run, the largest US bank failure since 2008. It triggered a crisis of confidence in the entire banking system."
     },
     unpredictability: 8,
-    impact: 7,
+    impact: 5,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank"
   },
@@ -570,7 +571,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In April 2020, Chinese coffee chain Luckin Coffee was exposed for fabricating approximately $310 million in revenue. The once-hyped 'China's Starbucks' saw its stock crash over 80% and was delisted from NASDAQ."
     },
     unpredictability: 7,
-    impact: 6,
+    impact: 3,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Luckin_Coffee"
   },
@@ -586,7 +587,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On January 26, 2020, NBA legend Kobe Bryant, his 13-year-old daughter Gianna, and seven others died in a helicopter crash. Billions of fans worldwide were shocked, and memorial events were held across multiple countries."
     },
     unpredictability: 10,
-    impact: 7,
+    impact: 3,
     retrospectiveExplainability: 5,
     wikiLink: "https://en.wikipedia.org/wiki/Death_of_Kobe_Bryant"
   },
@@ -600,7 +601,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On August 31, 1997, Princess Diana died in a car crash in Paris at age 36. About 2.5 billion people watched her funeral, and her death sparked widespread reflection on celebrity privacy and paparazzi culture."
     },
     unpredictability: 9,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 6,
     wikiLink: "https://en.wikipedia.org/wiki/Death_of_Diana,_Princess_of_Wales"
   },
@@ -614,7 +615,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On November 22, 1963, President John F. Kennedy was assassinated in Dallas. The event deeply affected American social psychology, spawned enduring conspiracy theories, and is considered the moment America lost its innocence."
     },
     unpredictability: 9,
-    impact: 9,
+    impact: 7,
     retrospectiveExplainability: 6,
     wikiLink: "https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy"
   },
@@ -628,7 +629,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On October 2, 2018, Saudi journalist Jamal Khashoggi was murdered and dismembered inside the Saudi consulate in Turkey. The event drew severe international condemnation and severely damaged Saudi Arabia's international image."
     },
     unpredictability: 8,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Assassination_of_Jamal_Khashoggi"
   },
@@ -642,7 +643,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On May 2, 2011, US Navy SEALs killed al-Qaeda leader Osama bin Laden in Abbottabad, Pakistan. After nearly a decade of pursuit, the death of the world's most wanted man marked a major turning point in the war on terror."
     },
     unpredictability: 6,
-    impact: 8,
+    impact: 6,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Killing_of_Osama_bin_Laden"
   },
@@ -656,7 +657,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On July 8, 2022, former Japanese PM Shinzo Abe was shot dead while giving a street speech in Nara. In gun-strict Japan, the assassination shocked the world and sparked widespread discussion about the Unification Church's influence."
     },
     unpredictability: 10,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 6,
     wikiLink: "https://en.wikipedia.org/wiki/Assassination_of_Shinzo_Abe"
   },
@@ -670,7 +671,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On June 25, 2009, the King of Pop Michael Jackson died suddenly in Los Angeles at age 50 from an overdose of propofol administered by his personal physician. The news briefly crashed internet traffic worldwide."
     },
     unpredictability: 8,
-    impact: 7,
+    impact: 2,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Death_of_Michael_Jackson"
   },
@@ -728,7 +729,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In 79 AD, Mount Vesuvius erupted suddenly, burying the thriving Roman cities of Pompeii and Herculaneum under meters of volcanic ash, killing about 2,000 people instantly. The city was not rediscovered until 1748, becoming the most important archaeological site for understanding ancient Roman life."
     },
     unpredictability: 8,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
   },
@@ -742,7 +743,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In 1453, Ottoman Sultan Mehmed II conquered Constantinople, ending the 1,100-year Byzantine Empire. This event marked the end of the Middle Ages, drove Greek scholars westward fueling the Renaissance, and disrupted East-West trade routes, indirectly spurring the Age of Exploration."
     },
     unpredictability: 7,
-    impact: 10,
+    impact: 8,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
   },
@@ -756,7 +757,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On All Saints' Day 1755, an estimated magnitude-9 earthquake destroyed Lisbon, Portugal. The subsequent tsunami and fires killed about 60,000 people. The disaster profoundly influenced Enlightenment philosophy, with Voltaire and Kant both reflecting deeply on its implications."
     },
     unpredictability: 9,
-    impact: 9,
+    impact: 6,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake"
   },
@@ -828,7 +829,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On June 30, 1908, an explosion with the force of 1,000 Hiroshima bombs occurred over remote Siberian forests, flattening 2,000 square kilometers of trees yet leaving no crater. Had this explosion occurred over a populated area, the consequences would have been catastrophic."
     },
     unpredictability: 10,
-    impact: 6,
+    impact: 1,
     retrospectiveExplainability: 6,
     wikiLink: "https://en.wikipedia.org/wiki/Tunguska_event"
   },
@@ -842,7 +843,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In January 2025, small Chinese AI company DeepSeek released its R1 reasoning model, matching OpenAI's flagship performance at under $6 million training cost. Nvidia's stock dropped 18% on the news, shaking the industry consensus that AI requires massive compute, and proving China's AI capabilities far exceeded Western expectations."
     },
     unpredictability: 9,
-    impact: 8,
+    impact: 6,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/DeepSeek"
   },
@@ -858,7 +859,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On December 7, 1941, Japan launched a surprise attack on Pearl Harbor with 353 aircraft, sinking or damaging nearly 20 warships and over 300 planes, killing 2,403 Americans. The attack brought the US into WWII, fundamentally changing the war's trajectory and the global order."
     },
     unpredictability: 8,
-    impact: 10,
+    impact: 9,
     retrospectiveExplainability: 9,
     wikiLink: "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
   },
@@ -916,7 +917,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On February 1, 2021, Myanmar's military staged a coup after Aung San Suu Kyi's NLD won a landslide election, overthrowing the democratic government and declaring a state of emergency. The coup ended a decade of democratization, sparking mass protests and an ongoing civil war."
     },
     unpredictability: 7,
-    impact: 8,
+    impact: 6,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/2021_Myanmar_coup_d%27%C3%A9tat"
   },
@@ -930,7 +931,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In July 2023, Niger's presidential guard detained the elected president and staged a coup — the third in the Sahel after Mali (2020/2021) and Burkina Faso (2022). The three countries subsequently left ECOWAS and formed the Alliance of Sahel States, dealing a major blow to Western influence in Africa."
     },
     unpredictability: 7,
-    impact: 7,
+    impact: 5,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/2023_Nigerien_coup_d%27%C3%A9tat"
   },
@@ -944,7 +945,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In 2022, Sri Lanka's economy collapsed entirely — inflation soared to 54.6%, food prices surged 81%, and the country experienced its first sovereign default since independence. Mass protests forced President Rajapaksa to flee the country in July, leaving behind severe shortages of fuel, medicine, and food."
     },
     unpredictability: 7,
-    impact: 7,
+    impact: 5,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Sri_Lankan_economic_crisis_(2019%E2%80%932024)"
   },
@@ -972,7 +973,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On December 3, 2024, South Korean President Yoon Suk Yeol suddenly declared martial law, accusing the opposition of 'anti-state activities.' 190 legislators gathered at the National Assembly and voted to lift it within hours — martial law lasted only about 6 hours. Yoon was ultimately sentenced to life in prison for insurrection, making it one of the most surreal episodes in Korean democratic history."
     },
     unpredictability: 9,
-    impact: 8,
+    impact: 5,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/2024_South_Korean_martial_law_crisis"
   },
@@ -986,7 +987,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On December 8, 2024, Syrian opposition forces toppled the 53-year Assad dynasty after just a 10-day lightning offensive. Assad fled to Russia. Regime forces collapsed with almost no resistance at a speed that shocked the world, profoundly reshaping Middle Eastern geopolitics."
     },
     unpredictability: 9,
-    impact: 9,
+    impact: 7,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Fall_of_the_Assad_regime"
   },
@@ -1016,7 +1017,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On April 2, 2025, Trump declared 'Liberation Day,' imposing a 10% baseline tariff on all imports plus higher tariffs on dozens of countries — the largest tariff hike since the 1930 Smoot-Hawley Act. The Supreme Court ruled parts unconstitutional in February 2026, but not before costing households an extra $1,700 and 89,000 manufacturing jobs."
     },
     unpredictability: 7,
-    impact: 9,
+    impact: 8,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Liberation_Day_tariffs"
   },
@@ -1030,7 +1031,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In 2018, the Turkish lira plunged over 40% in months, from 4 to 7.22 per dollar. President Erdogan's insistence on unorthodox low interest rates exacerbated the crisis, triggering contagion fears across emerging markets including Lebanon and South Africa."
     },
     unpredictability: 6,
-    impact: 7,
+    impact: 5,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Turkish_economic_crisis_(2018%E2%80%93current)"
   },
@@ -1060,7 +1061,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In April 2010, ash from Iceland's Eyjafjallajokull volcano caused the largest airspace closure since WWII. Over 100,000 flights were cancelled, 7 million passengers stranded, and airlines lost $1.7 billion. Ironically, the eruption was only moderate in volcanological terms — a classic example of disproportionate systemic impact."
     },
     unpredictability: 9,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Air_travel_disruption_after_the_2010_Eyjafjallaj%C3%B6kull_eruption"
   },
@@ -1074,7 +1075,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On January 15, 2022, the Hunga Tonga-Hunga Ha'apai submarine volcano produced the largest atmospheric explosion recorded by modern instruments. The eruption generated tsunamis affecting over a dozen Pacific nations and severed Tonga's communications cables, isolating the entire nation for weeks."
     },
     unpredictability: 9,
-    impact: 7,
+    impact: 3,
     retrospectiveExplainability: 6,
     wikiLink: "https://en.wikipedia.org/wiki/2022_Hunga_Tonga%E2%80%93Hunga_Ha%CA%BBapai_eruption_and_tsunami"
   },
@@ -1104,7 +1105,7 @@ const BLACK_SWAN_EVENTS = [
       en: "Between 2013 and 2016, Ebola ravaged West Africa, infecting about 28,000 and killing 11,000 — 100 times more cases than all previous Ebola outbreaks combined. It was the first time Ebola spread extensively in cities and across borders, exposing severe gaps in global public health emergency systems."
     },
     unpredictability: 8,
-    impact: 8,
+    impact: 6,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Western_African_Ebola_virus_epidemic"
   },
@@ -1118,7 +1119,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In May 2022, mpox — previously confined to Central and West Africa — suddenly appeared in community transmission across multiple countries globally for the first time. The WHO declared a public health emergency in July, with over 87,000 cases eventually reported across 110+ countries."
     },
     unpredictability: 8,
-    impact: 6,
+    impact: 3,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/2022%E2%80%932023_mpox_outbreak"
   },
@@ -1134,7 +1135,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In December 2008, Bernard Madoff was exposed as running the largest Ponzi scheme in history, totaling $64.8 billion and defrauding 4,800 investors. The SEC had investigated multiple times without detecting the fraud. Madoff was sentenced to 150 years in prison."
     },
     unpredictability: 8,
-    impact: 8,
+    impact: 6,
     retrospectiveExplainability: 9,
     wikiLink: "https://en.wikipedia.org/wiki/Madoff_investment_scandal"
   },
@@ -1148,7 +1149,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In June 2020, German DAX member Wirecard filed for insolvency after admitting that EUR 1.9 billion had 'gone missing,' becoming the first DAX 30 company ever to go bankrupt. Despite years of Financial Times reporting on fraud allegations, German regulator BaFin had instead attacked short-sellers to protect the company."
     },
     unpredictability: 7,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 9,
     wikiLink: "https://en.wikipedia.org/wiki/Wirecard_scandal"
   },
@@ -1162,7 +1163,7 @@ const BLACK_SWAN_EVENTS = [
       en: "Theranos founder Elizabeth Holmes claimed to have invented revolutionary blood testing using just drops of blood, reaching a $9 billion valuation. In 2015, The Wall Street Journal exposed the technology as non-functional. Holmes was sentenced to 11+ years in prison for fraud, becoming Silicon Valley's biggest 'fake it till you make it' scandal."
     },
     unpredictability: 7,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/Theranos"
   },
@@ -1176,7 +1177,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In October 2018 and March 2019, two Boeing 737 MAX aircraft crashed, killing all 346 people aboard. Investigations revealed Boeing had concealed critical MCAS flight control system flaws to save costs and deceived the FAA. All 737 MAX aircraft were grounded worldwide for nearly two years, with Boeing facing billions in fines and compensation."
     },
     unpredictability: 7,
-    impact: 8,
+    impact: 6,
     retrospectiveExplainability: 9,
     wikiLink: "https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings"
   },
@@ -1190,7 +1191,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On July 19, 2024, a faulty CrowdStrike software update crashed approximately 8.5 million Windows systems globally — the largest IT outage in history. Airlines, banks, hospitals, media, and government services were massively disrupted, costing US Fortune 500 companies an estimated $5.4 billion."
     },
     unpredictability: 9,
-    impact: 8,
+    impact: 5,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages"
   },
@@ -1206,7 +1207,7 @@ const BLACK_SWAN_EVENTS = [
       en: "At the 1980 Winter Olympics, a team of American college players defeated the four-time gold medal Soviet professional hockey team 4-3. Considered one of the greatest sports upsets in history, it carried enormous symbolic significance during the Cold War and greatly boosted American morale."
     },
     unpredictability: 10,
-    impact: 7,
+    impact: 2,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Miracle_on_Ice"
   },
@@ -1220,7 +1221,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In the 2015-16 season, Leicester City — who nearly got relegated the previous year — won the Premier League at 5,000-to-1 odds, creating arguably the greatest miracle in modern sports history. It proved that extremely unlikely events do occur even in highly competitive professional sports."
     },
     unpredictability: 10,
-    impact: 6,
+    impact: 1,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Leicester_City_F.C._in_the_2015%E2%80%9316_season"
   },
@@ -1234,7 +1235,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In the 2022 FIFA World Cup group stage, Saudi Arabia stunned tournament favorites Argentina 2-1 in a shocking comeback, creating one of the greatest upsets in World Cup history. The Saudi government declared a national holiday to celebrate the historic victory."
     },
     unpredictability: 9,
-    impact: 5,
+    impact: 1,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Argentina_v_Saudi_Arabia_(2022_FIFA_World_Cup)"
   },
@@ -1248,7 +1249,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In February 1990, 42-to-1 underdog Buster Douglas knocked out the seemingly invincible world heavyweight champion Mike Tyson in Tokyo. It remains the biggest upset in boxing history — Tyson had never been knocked down in his 37 previous professional fights."
     },
     unpredictability: 10,
-    impact: 6,
+    impact: 1,
     retrospectiveExplainability: 7,
     wikiLink: "https://en.wikipedia.org/wiki/Buster_Douglas_vs._Mike_Tyson"
   },
@@ -1262,7 +1263,7 @@ const BLACK_SWAN_EVENTS = [
       en: "At the 2015 Rugby World Cup, Japan defeated two-time champions South Africa 34-32 with a try in the dying moments, called 'the greatest upset in sports history' by the BBC. Japan had won only one previous World Cup match in their entire history; this victory launched Japan's rugby renaissance."
     },
     unpredictability: 10,
-    impact: 6,
+    impact: 1,
     retrospectiveExplainability: 6,
     wikiLink: "https://en.wikipedia.org/wiki/Japan_v_South_Africa_(2015_Rugby_World_Cup)"
   },
@@ -1278,7 +1279,7 @@ const BLACK_SWAN_EVENTS = [
       en: "In March 2021, the mega container ship 'Ever Given' ran aground in the Suez Canal, blocking the world's most critical shipping lane for six days. 432 vessels were trapped, $9 billion in daily trade was disrupted, and global supply chain losses totaled about $137 billion. One ship exposed the extreme fragility of globalized supply chains."
     },
     unpredictability: 9,
-    impact: 7,
+    impact: 4,
     retrospectiveExplainability: 8,
     wikiLink: "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction"
   },
@@ -1322,7 +1323,7 @@ const BLACK_SWAN_EVENTS = [
       en: "On January 28, 1986, the Space Shuttle Challenger broke apart 73 seconds after launch, killing all 7 crew members including teacher Christa McAuliffe. Millions watched the tragedy on live TV. The investigation found O-ring seal failure in cold weather was the direct cause, and NASA's organizational culture and decision-making were severely criticized."
     },
     unpredictability: 8,
-    impact: 8,
+    impact: 5,
     retrospectiveExplainability: 9,
     wikiLink: "https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster"
   },
@@ -1824,8 +1825,8 @@ const UI_TEXT = {
   },
   feature2Title: { zh: "极端影响", en: "Extreme Impact" },
   feature2Text: {
-    zh: "事件产生极大的影响，改变了历史进程或深刻影响了大量人的生活。",
-    en: "The event carries enormous consequences, changing the course of history or profoundly affecting many lives."
+    zh: "事件对现实世界造成了巨大的结构性变化——不是新闻声量的大小，而是对制度、行业、国界、生活方式产生了多大程度的持久改变。",
+    en: "The event causes massive structural change in the real world — not measured by media attention, but by the lasting transformation of systems, industries, borders, and how people live."
   },
   feature3Title: { zh: "事后可解释性", en: "Retrospective Explainability" },
   feature3Text: {
@@ -1838,8 +1839,8 @@ const UI_TEXT = {
   },
   scoring: { zh: "评分说明", en: "Scoring Guide" },
   scoringText: {
-    zh: "每个事件按1-10分评分。综合评分 = 不可预测性 + 影响力 + 事后可解释性（满分30分）。分数越高越符合黑天鹅特征。",
-    en: "Each event is scored 1-10 on each dimension. Total score = Unpredictability + Impact + Retrospective Explainability (max 30). Higher scores indicate a stronger Black Swan."
+    zh: "每个事件按1-10分评分。综合评分 = 不可预测性 + 影响力 + 事后可解释性（满分30分）。注意：影响力衡量的是对现实世界造成的结构性变化，而非新闻声量或情感冲击。例如，名人去世新闻声量巨大但对世界结构几乎没有改变，评分较低；而青霉素的发现挽救了数十亿生命，评分为满分。",
+    en: "Each event is scored 1-10 per dimension. Total = Unpredictability + Impact + Explainability (max 30). Note: Impact measures real-world structural change, not media attention or emotional shock. For example, a celebrity death may dominate headlines but changes little structurally (low score), while penicillin's discovery saved billions of lives (score: 10)."
   },
   footer: {
     zh: "基于塔勒布黑天鹅理论 | 仅供教育参考 | 数据来源：维基百科、Polymarket、Metaculus、Manifold Markets、Saxo Bank 等",
