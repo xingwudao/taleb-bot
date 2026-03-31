@@ -2,6 +2,8 @@
 let currentLang = 'zh';
 let currentFilter = 'all';
 let currentRankBy = 'total';
+let currentSort = 'year-desc';
+let currentEra = 'all';
 
 // ===== Language =====
 function toggleLang() {
@@ -11,6 +13,7 @@ function toggleLang() {
   if (mobileLangBtn) mobileLangBtn.textContent = currentLang === 'zh' ? 'EN' : '中文';
   document.documentElement.lang = currentLang;
   updateAllText();
+  updateSortLabels();
   renderEvents();
   renderRankings();
   renderPotential();
@@ -53,12 +56,65 @@ function closeMobileMenu() {
   document.getElementById('mobileMenu').classList.remove('active');
 }
 
+// ===== Sort & Era =====
+function onSortChange(val) {
+  currentSort = val;
+  renderEvents();
+}
+
+function onEraChange(val) {
+  currentEra = val;
+  renderEvents();
+}
+
+function updateSortLabels() {
+  const sortOpts = { 'year-desc': 'sortYearDesc', 'year-asc': 'sortYearAsc', 'total-desc': 'sortScoreDesc', 'unpredictability-desc': 'sortUnpredDesc', 'impact-desc': 'sortImpactDesc' };
+  document.querySelectorAll('#sortSelect option').forEach(opt => {
+    const key = opt.getAttribute('data-i18n-option');
+    if (key && UI_TEXT[key]) opt.textContent = UI_TEXT[key][currentLang];
+  });
+  const eraOpts = { all: 'eraAll', ancient: 'eraAncient', '1900-1949': 'era1900', '1950-1999': 'era1950', '2000-2009': 'era2000', '2010-2019': 'era2010', '2020-2029': 'era2020' };
+  document.querySelectorAll('#eraSelect option').forEach(opt => {
+    const key = opt.getAttribute('data-i18n-option');
+    if (key && UI_TEXT[key]) opt.textContent = UI_TEXT[key][currentLang];
+  });
+}
+
+function filterByEra(events) {
+  if (currentEra === 'all') return events;
+  if (currentEra === 'ancient') return events.filter(e => e.year < 1900);
+  const [start, end] = currentEra.split('-').map(Number);
+  return events.filter(e => e.year >= start && e.year <= end);
+}
+
+function sortEvents(events) {
+  const sorted = [...events];
+  switch (currentSort) {
+    case 'year-desc': return sorted.sort((a, b) => b.year - a.year);
+    case 'year-asc': return sorted.sort((a, b) => a.year - b.year);
+    case 'total-desc': return sorted.sort((a, b) =>
+      (b.unpredictability + b.impact + b.retrospectiveExplainability) -
+      (a.unpredictability + a.impact + a.retrospectiveExplainability));
+    case 'unpredictability-desc': return sorted.sort((a, b) => b.unpredictability - a.unpredictability);
+    case 'impact-desc': return sorted.sort((a, b) => b.impact - a.impact);
+    default: return sorted;
+  }
+}
+
 // ===== Events =====
 function renderEvents() {
   const grid = document.getElementById('eventsGrid');
-  const filtered = currentFilter === 'all'
-    ? EVENTS
+  let filtered = currentFilter === 'all'
+    ? [...EVENTS]
     : EVENTS.filter(e => e.category === currentFilter);
+  filtered = filterByEra(filtered);
+  filtered = sortEvents(filtered);
+
+  // Update count
+  const countEl = document.getElementById('eventCount');
+  if (countEl) {
+    countEl.textContent = t('eventCountText').replace('{n}', filtered.length);
+  }
 
   grid.innerHTML = filtered.map(event => {
     const total = event.unpredictability + event.impact + event.retrospectiveExplainability;
@@ -123,6 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize
   updateAllText();
   updateFilterLabels();
+  updateSortLabels();
   renderEvents();
   renderRankings();
   renderPotential();

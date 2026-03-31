@@ -1847,5 +1847,20 @@ const UI_TEXT = {
   },
   rank: { zh: "排名", en: "Rank" },
   event: { zh: "事件", en: "Event" },
-  score: { zh: "评分", en: "Score" }
+  score: { zh: "评分", en: "Score" },
+  sortBy: { zh: "排序", en: "Sort" },
+  sortYearDesc: { zh: "年份 新→旧", en: "Year: Newest First" },
+  sortYearAsc: { zh: "年份 旧→新", en: "Year: Oldest First" },
+  sortScoreDesc: { zh: "综合评分 高→低", en: "Score: High to Low" },
+  sortUnpredDesc: { zh: "不可预测性 高→低", en: "Unpredictability: High to Low" },
+  sortImpactDesc: { zh: "影响力 高→低", en: "Impact: High to Low" },
+  yearRange: { zh: "时代", en: "Era" },
+  eraAll: { zh: "全部时代", en: "All Eras" },
+  eraAncient: { zh: "1900年以前", en: "Before 1900" },
+  era1900: { zh: "1900-1949", en: "1900-1949" },
+  era1950: { zh: "1950-1999", en: "1950-1999" },
+  era2000: { zh: "2000-2009", en: "2000-2009" },
+  era2010: { zh: "2010-2019", en: "2010-2019" },
+  era2020: { zh: "2020年代", en: "2020s" },
+  eventCountText: { zh: "共 {n} 个事件", en: "{n} events" }
 };

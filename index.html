@@ -83,6 +83,33 @@
         <button class="filter-btn" data-filter="institutional"></button>
         <button class="filter-btn" data-filter="personal"></button>
       </div>
+      <div class="sort-bar">
+        <div class="sort-group">
+          <label class="sort-label" data-i18n="sortBy"></label>
+          <select id="sortSelect" class="sort-select" onchange="onSortChange(this.value)">
+            <option value="year-desc" data-i18n-option="sortYearDesc"></option>
+            <option value="year-asc" data-i18n-option="sortYearAsc"></option>
+            <option value="total-desc" data-i18n-option="sortScoreDesc"></option>
+            <option value="unpredictability-desc" data-i18n-option="sortUnpredDesc"></option>
+            <option value="impact-desc" data-i18n-option="sortImpactDesc"></option>
+          </select>
+        </div>
+        <div class="sort-group">
+          <label class="sort-label" data-i18n="yearRange"></label>
+          <select id="eraSelect" class="sort-select" onchange="onEraChange(this.value)">
+            <option value="all" data-i18n-option="eraAll"></option>
+            <option value="ancient" data-i18n-option="eraAncient"></option>
+            <option value="1900-1949" data-i18n-option="era1900"></option>
+            <option value="1950-1999" data-i18n-option="era1950"></option>
+            <option value="2000-2009" data-i18n-option="era2000"></option>
+            <option value="2010-2019" data-i18n-option="era2010"></option>
+            <option value="2020-2029" data-i18n-option="era2020"></option>
+          </select>
+        </div>
+        <div class="sort-group event-count">
+          <span id="eventCount"></span>
+        </div>
+      </div>
       <div id="eventsGrid" class="events-grid"></div>
     </div>
   </section>
