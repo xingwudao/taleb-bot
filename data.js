@@ -870,18 +870,6 @@ const POTENTIAL_BLACK_SWANS = [
     timeframe: { zh: "正在发生", en: "Ongoing" }
   },
   {
-    id: 136,
-    category: "national",
-    title: { zh: "中国政变企图 — 习近平被推翻", en: "China Coup Attempt Against Xi Jinping" },
-    description: {
-      zh: "Polymarket将政变企图定价为6%，习近平2027年前被罢免定价约9%。习近平对军队的大规模清洗（涉及中央军委副主席张又侠、总参谋长刘振立等）暗示内部严重不稳定。中国政治体制看似铁板一块，使政变看起来不可能——但大规模清洗恰恰说明深层派系冲突。",
-      en: "Polymarket prices a coup attempt at 6% and Xi removal before 2027 at ~9%. Xi's sweeping military purges (targeting CMC vice chairman, chief of staff) suggest deep internal instability. China's political system appears monolithic, making a coup seem impossible — but the scale of purges signals deep factional conflicts."
-    },
-    likelihood: { zh: "极低 (6%)", en: "Very Low (6%)" },
-    potentialImpact: 10,
-    timeframe: { zh: "2026-2027", en: "2026-2027" }
-  },
-  {
     id: 137,
     category: "national",
     title: { zh: "特朗普被援引第25修正案免职", en: "Trump Removed via 25th Amendment" },
