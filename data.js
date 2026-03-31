@@ -694,7 +694,9 @@ const BLACK_SWAN_EVENTS = [
 const EVENTS = BLACK_SWAN_EVENTS.filter(e => e.id !== 48);
 
 // ===== POTENTIAL BLACK SWANS =====
+// Sources: Polymarket, Metaculus, Kalshi, Manifold Markets, Saxo Bank Outrageous Predictions
 const POTENTIAL_BLACK_SWANS = [
+  // --- WORLD-LEVEL ---
   {
     id: 101,
     category: "world",
@@ -710,50 +712,212 @@ const POTENTIAL_BLACK_SWANS = [
   {
     id: 102,
     category: "world",
-    title: { zh: "全球性网络攻击瘫痪关键基础设施", en: "Global Cyberattack on Critical Infrastructure" },
+    title: { zh: "全球性网络攻击瘫痪关键基础设施", en: "Grid-Down Cyberattack on Critical Infrastructure" },
     description: {
-      zh: "现代社会高度依赖互联网和数字基础设施。一次针对全球金融系统、电力网络或通信卫星的协调攻击可能导致全球性的社会瘫痪。随着量子计算的发展，现有加密体系也面临被攻破的风险。",
-      en: "Modern society is highly dependent on internet and digital infrastructure. A coordinated attack on global financial systems, power grids, or communication satellites could cause global social paralysis. Quantum computing also threatens current encryption."
+      zh: "安全专家预测2026年将出现针对关键基础设施的高影响网络事件，极可能与地缘政治冲突挂钩。俄罗斯和伊朗被认为是最可能的发起者。Forrester、IBM和Palo Alto Networks均将此列为2026年首要风险。现代社会从未经历过长时间的网络攻击导致的大规模断电。",
+      en: "Security experts predict a high-impact cyber incident on OT/critical infrastructure in 2026, likely tied to geopolitical conflict. Russia and Iran are identified as most likely perpetrators. Forrester, IBM, and Palo Alto Networks all flag this as a top 2026 risk."
     },
     likelihood: { zh: "中高", en: "Medium-High" },
-    potentialImpact: 10,
+    potentialImpact: 9,
     timeframe: { zh: "随时可能", en: "Anytime" }
   },
+  {
+    id: 109,
+    category: "world",
+    title: { zh: "H5N1禽流感演变为人类大流行", en: "H5N1 Bird Flu Human Pandemic" },
+    description: {
+      zh: "H5N1已感染数亿农场动物并在美国奶牛群中建立传播链。历史上全球已知人类H5N1感染病例的致死率接近50%。科学家警告病毒获得人际高效传播能力只是时间问题。一旦爆发，致死率将远超新冠。",
+      en: "H5N1 has infected hundreds of millions of farm animals and established itself in US dairy cattle. Historically, nearly half of known human H5N1 infections have been fatal. Scientists warn sustained human-to-human transmission is a matter of 'when, not if.'"
+    },
+    likelihood: { zh: "低 (5-15%)", en: "Low (5-15%)" },
+    potentialImpact: 10,
+    timeframe: { zh: "2026-2027", en: "2026-2027" }
+  },
+  {
+    id: 112,
+    category: "world",
+    title: { zh: "核武器在冲突中被引爆", en: "Nuclear Weapon Detonation in Conflict" },
+    description: {
+      zh: "Polymarket曾开设核武器引爆预测市场（因伦理争议后下架），交易量达83.8万美元，显示约22%的概率。随着美伊冲突升级和俄乌战争持续，核升级路径真实存在。1945年以来核武器从未在冲突中使用，任何引爆都将跨越终极禁忌。",
+      en: "Polymarket briefly hosted a nuclear detonation market (pulled for ethical concerns) showing ~22% probability with $838K traded. With US-Iran conflict active and Russia-Ukraine ongoing, nuclear escalation pathways exist. No nuclear weapon has been used in conflict since 1945."
+    },
+    likelihood: { zh: "极低 (5-10%)", en: "Very Low (5-10%)" },
+    potentialImpact: 10,
+    timeframe: { zh: "不确定", en: "Uncertain" }
+  },
+  {
+    id: 104,
+    category: "world",
+    title: { zh: "卡灵顿级超级太阳风暴", en: "Carrington-Level Solar Superstorm" },
+    description: {
+      zh: "NASA确认太阳活动极大期持续到2026年。2026年2月已爆发X8.1级耀斑。ESA模拟显示卡灵顿级事件可能摧毁地球轨道卫星。低地球轨道在此类事件中\"距灾难仅2.8天\"。将导致GPS、通信卫星、电网和互联网基础设施全球瘫痪，预估损失2-20万亿美元。",
+      en: "NASA confirms solar maximum is ongoing through 2026. X8.1-class flares erupted in February 2026. ESA simulations show a Carrington-level event could destroy Earth-orbiting satellites. Low-Earth orbit is '2.8 days from disaster.' Estimated damage: $2-20 trillion."
+    },
+    likelihood: { zh: "极低 (每年1-2%)", en: "Very Low (1-2%/year)" },
+    potentialImpact: 10,
+    timeframe: { zh: "2026 (太阳极大期)", en: "2026 (peak solar cycle)" }
+  },
+  {
+    id: 130,
+    category: "world",
+    title: { zh: "量子计算攻破公钥加密体系（Q日）", en: "Quantum Computing Breaks Public-Key Cryptography (Q-Day)" },
+    description: {
+      zh: "Manifold Markets共识认为2030年前不会发生密码学崩溃，但Michele Mosca博士估计2026年前有1/7的概率。JVG算法可能仅需不到5000个量子比特即可破解RSA/ECC。如果加密突然被攻破，所有数字银行、加密货币（2万亿美元+）、军事通信和互联网安全将同时失效。",
+      en: "Manifold consensus says no cryptographic collapse before 2030, but Dr. Michele Mosca estimates a 1-in-7 chance by 2026. The JVG Algorithm may require fewer than 5,000 qubits to break RSA/ECC. If encryption breaks suddenly, all digital banking, cryptocurrency ($2T+), military communications, and internet security fail simultaneously."
+    },
+    likelihood: { zh: "极低 (5-14%)", en: "Very Low (5-14%)" },
+    potentialImpact: 10,
+    timeframe: { zh: "2026-2028", en: "2026-2028" }
+  },
+  {
+    id: 131,
+    category: "world",
+    title: { zh: "全球去美元化加速与美元崩溃", en: "Accelerated De-dollarization & Dollar Collapse" },
+    description: {
+      zh: "美国公共债务已达GDP的100%，年利息支出突破1万亿美元。美元指数趋势线承压，\"高概率突破可能在2026年底前确认\"。《外交事务》杂志警告\"美国即将到来的崩溃\"。金砖国家扩员和央行数字货币同时挑战美元霸权。",
+      en: "US public debt at 100% of GDP with annual interest exceeding $1 trillion. The DXY trendline is under sustained pressure. Foreign Affairs warns of 'America's Coming Crash.' BRICS expansion and CBDCs simultaneously challenge dollar hegemony."
+    },
+    likelihood: { zh: "极低 (急性危机~5%)", en: "Very Low (acute ~5%)" },
+    potentialImpact: 10,
+    timeframe: { zh: "2026-2028", en: "2026-2028" }
+  },
+
+  // --- CONTINENTAL/REGIONAL ---
   {
     id: 103,
     category: "continental",
     title: { zh: "台海冲突爆发", en: "Taiwan Strait Conflict" },
     description: {
-      zh: "台湾海峡一直是全球最敏感的地缘政治热点之一。如果发生军事冲突，不仅会影响中美关系，更会导致全球半导体供应链断裂（台积电供应全球90%以上最先进芯片），冲击全球经济。",
-      en: "The Taiwan Strait remains one of the world's most sensitive geopolitical hotspots. A military conflict would affect US-China relations and disrupt the global semiconductor supply chain (TSMC supplies 90%+ of advanced chips), devastating the world economy."
+      zh: "Polymarket台海入侵预测市场价格为13%（2026年底前），交易量超过330万美元。如果发生军事冲突，不仅会导致中美直接军事对抗的可能，更会切断全球半导体供应（台积电供应全球90%以上最先进芯片）。",
+      en: "Polymarket prices China-Taiwan invasion at 13% before end of 2026, with $3.3M+ in trading volume. A conflict would risk direct US-China military confrontation and sever the global semiconductor supply (TSMC produces 90%+ of advanced chips)."
     },
-    likelihood: { zh: "中等", en: "Medium" },
+    likelihood: { zh: "低 (13%)", en: "Low (13%)" },
     potentialImpact: 10,
-    timeframe: { zh: "未知", en: "Unknown" }
+    timeframe: { zh: "2026-2027", en: "2026-2027" }
   },
   {
-    id: 104,
-    category: "world",
-    title: { zh: "超级火山喷发或小行星撞击", en: "Supervolcano Eruption or Asteroid Impact" },
+    id: 132,
+    category: "continental",
+    title: { zh: "美伊全面战争与伊朗政权崩溃", en: "US-Iran Full-Scale War & Regime Collapse" },
     description: {
-      zh: "黄石超级火山的喷发周期约为60-70万年，上一次喷发已经是64万年前。一旦喷发，将导致全球性的火山冬天，粮食产量可能下降90%。同样，大型小行星撞击地球的概率虽低，但影响是文明毁灭级的。",
-      en: "The Yellowstone supervolcano's eruption cycle is ~600-700K years, with the last eruption 640K years ago. An eruption would cause a volcanic winter, potentially reducing food production by 90%. Similarly, a large asteroid impact would be civilization-ending."
+      zh: "Polymarket伊朗打击市场交易额达5.29亿美元。\"美国2027年前入侵伊朗\"交易价格为19%。伊朗政权存续概率定价为66.5%，Manifold预测政权崩溃概率为27%。全面地面入侵或政权崩溃将动摇整个中东、推高油价，并可能引发与俄罗斯/中国的更大冲突。",
+      en: "Polymarket's Iran strike market saw $529M traded. 'US invades Iran before 2027' trades at 19%. Iranian regime survival priced at 66.5%, Manifold prices regime fall at 27%. A full invasion or regime collapse would destabilize the Middle East and risk wider conflict."
     },
-    likelihood: { zh: "极低", en: "Very Low" },
-    potentialImpact: 10,
-    timeframe: { zh: "地质时间尺度", en: "Geological timescale" }
+    likelihood: { zh: "中低 (19-33%)", en: "Low-Medium (19-33%)" },
+    potentialImpact: 9,
+    timeframe: { zh: "2026", en: "2026" }
   },
+  {
+    id: 133,
+    category: "continental",
+    title: { zh: "北约成员国退出联盟", en: "NATO Member State Withdrawal" },
+    description: {
+      zh: "Polymarket将北约解散定价为8%。法国\"不屈法兰西\"党已提交决议草案，要求法国退出北约军事一体化指挥系统。特朗普质疑北约安全保障。自1949年以来北约一直是西方安全基石，法国或土耳其的退出将从根本上重塑欧洲防务格局。",
+      en: "Polymarket prices NATO dissolution at 8%. France's La France Insoumise party submitted a draft resolution to withdraw from NATO's integrated military command. Trump has questioned NATO guarantees. NATO has been the cornerstone of Western security since 1949."
+    },
+    likelihood: { zh: "低 (8%)", en: "Low (8%)" },
+    potentialImpact: 9,
+    timeframe: { zh: "2026-2027", en: "2026-2027" }
+  },
+  {
+    id: 134,
+    category: "continental",
+    title: { zh: "俄乌停火崩溃演变为北约正面冲突", en: "Russia-Ukraine Ceasefire Collapse into NATO Confrontation" },
+    description: {
+      zh: "Metaculus预测2026年俄乌停火概率为40%。但反向情景——停火崩溃并升级至北约卷入——才是真正的黑天鹅。美国注意力转向伊朗时，俄罗斯可能利用窗口期。北约内部分歧正在加深。直接北约-俄罗斯对抗将是古巴导弹危机以来最危险的军事冲突。",
+      en: "Metaculus prices Russia-Ukraine ceasefire in 2026 at 40%. But the inverse — ceasefire collapses and escalation draws in NATO — is the Black Swan. With US attention diverted to Iran, Russia could exploit the window. This would be the most dangerous confrontation since the Cuban Missile Crisis."
+    },
+    likelihood: { zh: "极低 (3-5%)", en: "Very Low (3-5%)" },
+    potentialImpact: 10,
+    timeframe: { zh: "2026", en: "2026" }
+  },
+  {
+    id: 135,
+    category: "continental",
+    title: { zh: "欧盟成员国退出", en: "EU Member State Withdrawal (Post-Brexit Sequel)" },
+    description: {
+      zh: "Polymarket开设\"2027年前是否有国家退出欧盟\"市场，概率虽低但非零。中东欧民粹主义者（匈牙利、斯洛伐克）被形容为\"一边靠欧盟养活一边试图瓦解欧盟\"。英国脱欧本身就是黑天鹅，第二个退出（尤其是法国或意大利）将意味着欧洲一体化的终结。",
+      en: "Polymarket hosts 'Any country withdraws from EU before 2027' with low but non-zero probability. Central European populists (Hungary, Slovakia) are described as 'trying to break the EU while living off it.' A second departure (especially France or Italy) would signal terminal decline of the European project."
+    },
+    likelihood: { zh: "极低 (3-5%)", en: "Very Low (3-5%)" },
+    potentialImpact: 9,
+    timeframe: { zh: "2026-2027", en: "2026-2027" }
+  },
+
+  // --- NATIONAL ---
   {
     id: 105,
     category: "national",
-    title: { zh: "美国国债违约", en: "US National Debt Default" },
+    title: { zh: "美国主权债务危机", en: "US Sovereign Debt Crisis" },
     description: {
-      zh: "美国国债已超过34万亿美元，债务上限危机反复出现。如果美国真正发生国债违约，将摧毁美元作为全球储备货币的地位，引发全球金融市场崩溃，影响程度将远超2008年金融危机。",
-      en: "US national debt exceeds $34 trillion with recurring debt ceiling crises. An actual default would destroy the dollar's status as global reserve currency, triggering a global financial market collapse far worse than 2008."
+      zh: "美国国债已超过34万亿美元，年利息支出突破1万亿美元，债务上限危机反复出现。如果美国真正发生国债违约，将摧毁美元作为全球储备货币的地位，引发全球金融市场崩溃。《外交事务》警告\"美国即将到来的崩溃\"。",
+      en: "US national debt exceeds $34 trillion with annual interest over $1 trillion. Foreign Affairs warns of 'America's Coming Crash.' An actual default would destroy the dollar's status as global reserve currency, triggering financial collapse far worse than 2008."
     },
-    likelihood: { zh: "低", en: "Low" },
+    likelihood: { zh: "极低 (~5%)", en: "Very Low (~5%)" },
     potentialImpact: 10,
-    timeframe: { zh: "政治周期相关", en: "Tied to political cycles" }
+    timeframe: { zh: "2026-2028", en: "2026-2028" }
+  },
+  {
+    id: 108,
+    category: "national",
+    title: { zh: "中国房地产全面崩盘", en: "China Real Estate Total Collapse" },
+    description: {
+      zh: "中国房地产占GDP约30%，恒大、碧桂园等巨头已陷入债务危机。如果房价出现系统性暴跌，将冲击银行系统、地方政府财政和居民财富，可能引发全面经济危机。",
+      en: "Real estate accounts for ~30% of China's GDP, with giants like Evergrande and Country Garden already in debt crisis. A systemic price collapse could devastate the banking system, local government finances, and household wealth."
+    },
+    likelihood: { zh: "中高", en: "Medium-High" },
+    potentialImpact: 9,
+    timeframe: { zh: "正在发生", en: "Ongoing" }
+  },
+  {
+    id: 136,
+    category: "national",
+    title: { zh: "中国政变企图 — 习近平被推翻", en: "China Coup Attempt Against Xi Jinping" },
+    description: {
+      zh: "Polymarket将政变企图定价为6%，习近平2027年前被罢免定价约9%。习近平对军队的大规模清洗（涉及中央军委副主席张又侠、总参谋长刘振立等）暗示内部严重不稳定。中国政治体制看似铁板一块，使政变看起来不可能——但大规模清洗恰恰说明深层派系冲突。",
+      en: "Polymarket prices a coup attempt at 6% and Xi removal before 2027 at ~9%. Xi's sweeping military purges (targeting CMC vice chairman, chief of staff) suggest deep internal instability. China's political system appears monolithic, making a coup seem impossible — but the scale of purges signals deep factional conflicts."
+    },
+    likelihood: { zh: "极低 (6%)", en: "Very Low (6%)" },
+    potentialImpact: 10,
+    timeframe: { zh: "2026-2027", en: "2026-2027" }
+  },
+  {
+    id: 137,
+    category: "national",
+    title: { zh: "特朗普被援引第25修正案免职", en: "Trump Removed via 25th Amendment" },
+    description: {
+      zh: "Polymarket将第25修正案免职定价为14%，在伊朗空袭期间特朗普打高尔夫时一度飙升至40%。弹劾在任期结束前发生的概率定价为70%（受2026年中期选举翻转预期推动）。从未有总统通过第25修正案被免职，这将引发前所未有的宪政危机。",
+      en: "Polymarket prices 25th Amendment removal at 14%, spiking to 40% when Trump was golfing during Iran strikes. Impeachment before term ends priced at 70% (driven by expected 2026 midterm flip). No president has ever been removed via the 25th Amendment — this would trigger an unprecedented constitutional crisis."
+    },
+    likelihood: { zh: "低 (14%)", en: "Low (14%)" },
+    potentialImpact: 9,
+    timeframe: { zh: "2026-2027", en: "2026-2027" }
+  },
+
+  // --- INDUSTRY ---
+  {
+    id: 138,
+    category: "industry",
+    title: { zh: "AI泡沫破裂 — NVIDIA暴跌与AI公司崩溃", en: "AI Bubble Burst — NVIDIA Crash & AI Company Collapse" },
+    description: {
+      zh: "Polymarket将AI泡沫在2026年底前破裂的概率定价为22%。触发条件包括：NVIDIA从最高点下跌50%、半导体ETF下跌40%、OpenAI或Anthropic破产/被收购、H100租赁价格崩溃。MIT报告95%的生成式AI项目失败率；NBER发现90%的企业报告AI未带来生产力提升。OpenAI估值7500亿、Anthropic估值3500亿，但实际回报有限。",
+      en: "Polymarket assigns 22% probability of AI bubble bursting by Dec 2026. Resolution requires 3+ of: NVIDIA down 50% from ATH, semiconductor ETF down 40%, OpenAI or Anthropic bankruptcy/acquisition, H100 rental price collapse. MIT reports 95% failure rates for generative AI initiatives; NBER finds 90% of firms report no productivity impact."
+    },
+    likelihood: { zh: "中低 (22%)", en: "Low-Medium (22%)" },
+    potentialImpact: 9,
+    timeframe: { zh: "2026", en: "2026" }
+  },
+  {
+    id: 139,
+    category: "industry",
+    title: { zh: "比特币崩盘跌破38,000美元", en: "Bitcoin Crash Below $38,000" },
+    description: {
+      zh: "Stifel基于15年趋势线分析指向38,000美元。Polymarket显示BTC跌破70,000美元的概率为69%。BTC在2026年已触及81,000美元低点。从2025年10月126,000美元高点计算，80%跌幅意味着25,000美元。稳定币脱锚风险加剧了这一场景。比特币现已嵌入传统金融（ETF、企业资产负债表、主权储备），崩盘将引发连锁清算。",
+      en: "Stifel's 15-year trendline analysis points to $38,000. Polymarket shows 69% probability of BTC below $70K. An 80% decline from the Oct 2025 high of $126K would put BTC at $25K. Bitcoin is now embedded in traditional finance (ETFs, corporate balance sheets, sovereign reserves). A crash would trigger cascading liquidations and potential stablecoin collapse."
+    },
+    likelihood: { zh: "中低 (8-15%)", en: "Low-Medium (8-15%)" },
+    potentialImpact: 8,
+    timeframe: { zh: "2026", en: "2026" }
   },
   {
     id: 106,
@@ -780,45 +944,9 @@ const POTENTIAL_BLACK_SWANS = [
     timeframe: { zh: "10-30年", en: "10-30 years" }
   },
   {
-    id: 108,
-    category: "national",
-    title: { zh: "中国房地产全面崩盘", en: "China Real Estate Total Collapse" },
-    description: {
-      zh: "中国房地产占GDP约30%，恒大、碧桂园等巨头已陷入债务危机。如果房价出现系统性暴跌，将冲击银行系统、地方政府财政和居民财富，可能引发全面经济危机。",
-      en: "Real estate accounts for ~30% of China's GDP, with giants like Evergrande and Country Garden already in debt crisis. A systemic price collapse could devastate the banking system, local government finances, and household wealth."
-    },
-    likelihood: { zh: "中高", en: "Medium-High" },
-    potentialImpact: 9,
-    timeframe: { zh: "正在发生", en: "Ongoing" }
-  },
-  {
-    id: 109,
-    category: "world",
-    title: { zh: "新型大流行病（Disease X）", en: "Novel Pandemic (Disease X)" },
-    description: {
-      zh: "世界卫生组织将\"疾病X\"列入优先研究名单——一种目前尚未知的病原体可能引发比新冠更致命的大流行。生物技术的进步也增加了人工合成病原体泄漏或被恶意使用的风险。",
-      en: "The WHO has listed 'Disease X' as a priority — an unknown pathogen could trigger a pandemic deadlier than COVID. Advances in biotechnology also increase risks of synthetic pathogen leaks or deliberate misuse."
-    },
-    likelihood: { zh: "中等", en: "Medium" },
-    potentialImpact: 10,
-    timeframe: { zh: "随时可能", en: "Anytime" }
-  },
-  {
-    id: 110,
-    category: "world",
-    title: { zh: "全球去美元化加速", en: "Accelerated Global De-dollarization" },
-    description: {
-      zh: "金砖国家扩员、人民币国际化、央行数字货币兴起等趋势正在挑战美元霸权。如果多国同时大规模抛售美元资产，可能引发美元信用崩溃，彻底重塑全球金融秩序。",
-      en: "BRICS expansion, RMB internationalization, and CBDC development are challenging dollar hegemony. If multiple nations simultaneously dump dollar assets, it could trigger a dollar credit collapse and reshape global financial order."
-    },
-    likelihood: { zh: "中等", en: "Medium" },
-    potentialImpact: 9,
-    timeframe: { zh: "5-15年", en: "5-15 years" }
-  },
-  {
     id: 111,
     category: "industry",
-    title: { zh: "大型科技公司被拆分", en: "Major Tech Company Breakup" },
+    title: { zh: "大型科技公司被强制拆分", en: "Major Tech Company Forced Breakup" },
     description: {
       zh: "全球反垄断监管压力持续升级，美国和欧盟正在对苹果、谷歌、Meta等科技巨头提起反垄断诉讼。如果某家万亿市值公司被强制拆分，将重塑整个科技行业的格局。",
       en: "Global antitrust pressure is mounting, with the US and EU pursuing cases against Apple, Google, and Meta. A forced breakup of a trillion-dollar company would reshape the entire tech industry landscape."
@@ -828,16 +956,152 @@ const POTENTIAL_BLACK_SWANS = [
     timeframe: { zh: "3-10年", en: "3-10 years" }
   },
   {
-    id: 112,
-    category: "world",
-    title: { zh: "核战争", en: "Nuclear War" },
+    id: 140,
+    category: "industry",
+    title: { zh: "GLP-1减肥药大规模副作用与召回", en: "GLP-1 Weight Loss Drug Mass Recall" },
     description: {
-      zh: "随着地缘政治紧张加剧，核武器使用的风险重新上升。俄乌冲突期间，俄罗斯多次暗示可能使用战术核武器。即使是有限核冲突，也会导致数百万人死亡和全球性核冬天。",
-      en: "Nuclear weapon use risk is rising with geopolitical tensions. Russia has repeatedly hinted at tactical nuclear use during the Ukraine conflict. Even a limited nuclear exchange could kill millions and trigger global nuclear winter."
+      zh: "司美格鲁肽（Ozempic/Wegovy）和替尔泊肽（Mounjaro）等GLP-1药物已成为史上增长最快的药物类别，全球数千万人在服用，但长期副作用未知。如果出现严重的延迟副作用（甲状腺癌、肌肉萎缩、器官损伤），大规模召回将影响数千万用户，诺和诺德和礼来市值可能蒸发数千亿美元。",
+      en: "GLP-1 drugs (Ozempic/Wegovy/Mounjaro) are the fastest-growing drug class in history, with tens of millions of users, but long-term effects are unknown. If severe delayed side effects emerge (thyroid cancer, muscle wasting, organ damage), a mass recall would affect tens of millions and wipe hundreds of billions from Novo Nordisk and Eli Lilly."
+    },
+    likelihood: { zh: "低 (5-10%)", en: "Low (5-10%)" },
+    potentialImpact: 8,
+    timeframe: { zh: "2026-2028", en: "2026-2028" }
+  },
+  {
+    id: 141,
+    category: "industry",
+    title: { zh: "AI代理大规模失控 —\"AI清洁工\"危机", en: "AI Agent Mass Misfire — 'AI Janitor' Crisis" },
+    description: {
+      zh: "Saxo Bank 2026年\"离谱预测\"：治理不善的AI代理和自动化大规模失控，造成万亿美元的清理成本，催生\"AI清洁工\"新职业。马斯克承认xAI\"构建不当\"，需要从头重建。AI代理正以前所未有的规模部署，但监管几乎为零。金融交易、医疗、自动驾驶或基础设施中的关联性失败可能导致级联损害。",
+      en: "Saxo Bank's 2026 outrageous prediction: poorly governed AI agents misfire en masse, generating trillion-dollar cleanup costs and a new 'AI janitor' profession. Musk admitted xAI was 'not built right.' AI agents are deployed at unprecedented scale with minimal governance. Correlated failures across trading, healthcare, or infrastructure could cascade."
+    },
+    likelihood: { zh: "低 (10-15%)", en: "Low (10-15%)" },
+    potentialImpact: 8,
+    timeframe: { zh: "2026", en: "2026" }
+  },
+  {
+    id: 142,
+    category: "industry",
+    title: { zh: "OpenAI宣布实现通用人工智能（AGI）", en: "OpenAI Declares AGI Achievement" },
+    description: {
+      zh: "Polymarket开设\"OpenAI在2027年前宣布实现AGI\"市场。OpenAI现金消耗速度超过每年140亿美元，已关闭Sora并终止与迪士尼的10亿美元合作。尚无基准测试符合OpenAI自己定义的AGI标准（\"在经济上有价值的任务中超越人类\"）。但一旦发出可信的AGI声明，将引发监管恐慌、大规模资本重新配置，以及美中AI军备竞赛的升级。",
+      en: "Polymarket hosts 'OpenAI announces AGI before 2027.' OpenAI burns $14B+/year, shut down Sora, and terminated a $1B Disney deal. No benchmarks meet OpenAI's own AGI criteria. But a credible AGI announcement would trigger regulatory panic, massive capital reallocation, and AI arms race escalation between US and China."
+    },
+    likelihood: { zh: "极低 (5-10%)", en: "Very Low (5-10%)" },
+    potentialImpact: 10,
+    timeframe: { zh: "2026-2027", en: "2026-2027" }
+  },
+  {
+    id: 143,
+    category: "industry",
+    title: { zh: "VEI 6级以上超级火山喷发", en: "VEI 6+ Major Volcanic Eruption" },
+    description: {
+      zh: "Polymarket将2026年VEI 6+火山喷发的概率定价为11%。历史上VEI 6级事件（如1991年皮纳图博火山）会导致全球降温、农作物减产和航空中断。在当前地缘政治不稳定的背景下，级联效应将更加严重。",
+      en: "Polymarket prices a VEI 6+ eruption in 2026 at 11%. Historically, VEI 6 events (like Pinatubo 1991) cause global cooling, crop failures, and aviation disruption. Combined with current geopolitical instability, cascading effects would be severe."
+    },
+    likelihood: { zh: "低 (11%)", en: "Low (11%)" },
+    potentialImpact: 8,
+    timeframe: { zh: "2026", en: "2026" }
+  },
+  {
+    id: 144,
+    category: "industry",
+    title: { zh: "8.5级以上超级地震", en: "Magnitude 8.5+ Megaquake" },
+    description: {
+      zh: "Polymarket的\"3月31日前发生超级地震\"市场交易概率为15%。USGS每年追踪约15次7.0+级地震，但8.5+级极为罕见。如果发生在人口密集地区（东京、伊斯坦布尔、太平洋西北部），可能造成数十万人死亡和超过1万亿美元损失。若引发大规模海啸，伤亡和经济损失将成倍增加。",
+      en: "Polymarket's 'Megaquake by March 31' traded at 15%. USGS tracks ~15 magnitude 7.0+ events annually, but 8.5+ is extremely rare. In a populated area (Tokyo, Istanbul, Pacific Northwest), it could kill hundreds of thousands and cause $1T+ damage. A major tsunami would multiply casualties."
+    },
+    likelihood: { zh: "极低 (每年2-5%)", en: "Very Low (2-5%/year)" },
+    potentialImpact: 9,
+    timeframe: { zh: "随时可能", en: "Anytime" }
+  },
+
+  // --- INSTITUTIONAL ---
+  {
+    id: 110,
+    category: "institutional",
+    title: { zh: "全球去美元化 — SWIFT替代系统崛起", en: "De-dollarization — SWIFT Alternative Systems Rise" },
+    description: {
+      zh: "金砖国家扩员至10国、人民币跨境支付系统（CIPS）交易量激增、央行数字货币兴起。如果多国同时大规模抛售美元资产并转向替代支付系统，可能引发美元信用崩溃，彻底重塑全球金融秩序。这不仅是货币问题，更是对二战后美国主导的国际秩序的根本性挑战。",
+      en: "BRICS expanded to 10 nations, China's CIPS transaction volume is surging, and CBDCs are proliferating. If multiple nations simultaneously dump dollar assets and switch to alternative payment systems, it could trigger a dollar credit collapse and fundamentally reshape the post-WWII US-led international order."
+    },
+    likelihood: { zh: "中等", en: "Medium" },
+    potentialImpact: 9,
+    timeframe: { zh: "5-15年", en: "5-15 years" }
+  },
+  {
+    id: 145,
+    category: "institutional",
+    title: { zh: "马斯克商业帝国崩塌", en: "Elon Musk Empire Unraveling" },
+    description: {
+      zh: "马斯克承认xAI\"构建不当\"需要重建。特斯拉向xAI投资20亿美元。SpaceX以2500亿美元估值收购xAI，合并实体价值达1.25万亿美元。马斯克已辞去DOGE职位（Polymarket概率100%）。风险高度集中于特斯拉、SpaceX、xAI和X之间的交叉补贴和声誉传染——任一领域的失败都可能级联扩散。",
+      en: "Musk admitted xAI was 'not built right.' Tesla invested $2B in xAI. SpaceX acquired xAI at $250B in a combined $1.25T entity. Musk resigned from DOGE (100% on Polymarket). Concentration of risk across Tesla, SpaceX, xAI, and X creates systemic fragility — failure in one domain could cascade through cross-subsidization and reputational contagion."
+    },
+    likelihood: { zh: "低 (~10%)", en: "Low (~10%)" },
+    potentialImpact: 8,
+    timeframe: { zh: "2026-2027", en: "2026-2027" }
+  },
+
+  // --- PERSONAL ---
+  {
+    id: 146,
+    category: "personal",
+    title: { zh: "重要国家领导人突然去世或丧失能力", en: "Sudden Death or Incapacitation of Key World Leader" },
+    description: {
+      zh: "多位关键世界领导人年事已高或健康状况受到质疑。普京（73岁）多次传出健康问题，拜登（83岁）已因年龄问题退出竞选。习近平（72岁）的继任安排是全球最大的政治不确定性之一。任何一位领导人的突然丧失能力都可能在权力真空中引发不稳定。",
+      en: "Multiple key world leaders are aging or have questioned health. Putin (73) has had repeated health rumors, Biden (83) withdrew from re-election over age concerns. Xi's (72) succession plan is one of the world's biggest political uncertainties. Sudden incapacitation of any could create destabilizing power vacuums."
+    },
+    likelihood: { zh: "中等", en: "Medium" },
+    potentialImpact: 9,
+    timeframe: { zh: "随时可能", en: "Anytime" }
+  },
+  {
+    id: 147,
+    category: "personal",
+    title: { zh: "知名科技CEO因AI安全事故被追责入狱", en: "Tech CEO Jailed Over AI Safety Incident" },
+    description: {
+      zh: "随着AI系统越来越多地参与关键决策（医疗诊断、自动驾驶、金融交易），一旦AI系统导致大规模伤亡或财务损失，公众舆论和政治压力可能推动对科技公司CEO个人的刑事追责。这将彻底改变科技行业的风险偏好和创新节奏。",
+      en: "As AI systems increasingly make critical decisions (medical diagnosis, autonomous driving, financial trading), a large-scale AI-caused casualty or financial loss event could generate public and political pressure to criminally prosecute tech CEOs personally. This would fundamentally change the tech industry's risk appetite and innovation pace."
     },
     likelihood: { zh: "低", en: "Low" },
-    potentialImpact: 10,
-    timeframe: { zh: "不确定", en: "Uncertain" }
+    potentialImpact: 8,
+    timeframe: { zh: "3-10年", en: "3-10 years" }
+  },
+  {
+    id: 148,
+    category: "personal",
+    title: { zh: "重大体育赛事恐怖袭击", en: "Major Sporting Event Terrorist Attack" },
+    description: {
+      zh: "随着2026年世界杯（美国/加拿大/墨西哥）和2028年洛杉矶奥运会临近，大型国际体育赛事面临的恐怖袭击风险上升。1972年慕尼黑奥运会和2013年波士顿马拉松爆炸案证明体育赛事是高价值目标。在当前地缘政治紧张和\"独狼\"式袭击增多的背景下，风险尤为突出。",
+      en: "With the 2026 FIFA World Cup (US/Canada/Mexico) and 2028 LA Olympics approaching, the terror threat to major international sporting events is elevated. The 1972 Munich Olympics and 2013 Boston Marathon bombing show sports events are high-value targets. Current geopolitical tensions and 'lone wolf' attack trends heighten this risk."
+    },
+    likelihood: { zh: "低", en: "Low" },
+    potentialImpact: 8,
+    timeframe: { zh: "2026-2028", en: "2026-2028" }
+  },
+  {
+    id: 149,
+    category: "personal",
+    title: { zh: "深度伪造引发国际危机", en: "Deepfake-Triggered International Crisis" },
+    description: {
+      zh: "AI生成的深度伪造音视频已达到难以辨别真假的水平。如果一段伪造的国家领导人宣战或发出核打击命令的视频被广泛传播，在被核实之前就可能引发军事响应或金融市场崩溃。2023年五角大楼爆炸的AI生成假图片曾短暂引发股市波动，但下一次可能后果严重得多。",
+      en: "AI-generated deepfake audio and video have reached near-indistinguishable quality. A fabricated video of a world leader declaring war or ordering a nuclear strike could trigger military response or market collapse before verification. A 2023 AI-generated fake Pentagon explosion image briefly moved markets — the next incident could be far more severe."
+    },
+    likelihood: { zh: "中等", en: "Medium" },
+    potentialImpact: 8,
+    timeframe: { zh: "随时可能", en: "Anytime" }
+  },
+  {
+    id: 150,
+    category: "personal",
+    title: { zh: "大规模名人/政要丑闻连锁曝光", en: "Cascading Celebrity/Political Scandal Exposure" },
+    description: {
+      zh: "类似#MeToo运动或爱泼斯坦案的连锁曝光事件可能再次发生。如果涉及多位现任国家元首或全球最大企业CEO，可能导致多国政治危机同时爆发，引发全球治理真空。随着数字取证和举报人保护的进步，隐藏的大规模丑闻更容易被揭露。",
+      en: "A cascading exposure event like #MeToo or the Epstein case could recur. If it involves multiple sitting heads of state or CEOs of the world's largest corporations, it could trigger simultaneous political crises across countries. Advances in digital forensics and whistleblower protections make hidden scandals easier to expose."
+    },
+    likelihood: { zh: "中等", en: "Medium" },
+    potentialImpact: 7,
+    timeframe: { zh: "随时可能", en: "Anytime" }
   }
 ];
 
@@ -884,8 +1148,8 @@ const UI_TEXT = {
   rankByExplainability: { zh: "按事后可解释性", en: "By Explainability" },
   potentialTitle: { zh: "潜在的黑天鹅事件", en: "Potential Black Swan Events" },
   potentialSubtitle: {
-    zh: "以下事件目前看似不太可能发生，但一旦发生将产生极大影响——这正是黑天鹅的定义",
-    en: "These events currently seem unlikely, but would have extreme impact if they occur — the very definition of a Black Swan"
+    zh: "以下事件目前看似不太可能发生，但一旦发生将产生极大影响——这正是黑天鹅的定义。数据来源包括 Polymarket、Metaculus、Manifold Markets、Saxo Bank 等预测市场",
+    en: "These events currently seem unlikely, but would have extreme impact if they occur — the very definition of a Black Swan. Data sourced from Polymarket, Metaculus, Manifold Markets, Saxo Bank and other prediction markets"
   },
   likelihood: { zh: "发生可能性", en: "Likelihood" },
   potentialImpact: { zh: "潜在影响", en: "Potential Impact" },
@@ -924,8 +1188,8 @@ const UI_TEXT = {
     en: "Each event is scored 1-10 on each dimension. Total score = Unpredictability + Impact + Retrospective Explainability (max 30). Higher scores indicate a stronger Black Swan."
   },
   footer: {
-    zh: "基于塔勒布黑天鹅理论 | 仅供教育参考 | 数据来源：维基百科等公开资料",
-    en: "Based on Taleb's Black Swan Theory | For educational reference only | Sources: Wikipedia and public records"
+    zh: "基于塔勒布黑天鹅理论 | 仅供教育参考 | 数据来源：维基百科、Polymarket、Metaculus、Manifold Markets、Saxo Bank 等",
+    en: "Based on Taleb's Black Swan Theory | For educational reference only | Sources: Wikipedia, Polymarket, Metaculus, Manifold Markets, Saxo Bank"
   },
   rank: { zh: "排名", en: "Rank" },
   event: { zh: "事件", en: "Event" },
