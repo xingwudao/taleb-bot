@@ -687,6 +687,672 @@ const BLACK_SWAN_EVENTS = [
     impact: 5,
     retrospectiveExplainability: 5,
     wikiLink: ""
+  },
+
+  // ===== NEW EVENTS: ANCIENT/MEDIEVAL =====
+  {
+    id: 49,
+    category: "world",
+    year: 1347,
+    title: { zh: "黑死病席卷欧洲", en: "The Black Death Sweeps Europe" },
+    description: {
+      zh: "1347-1352年间，鼠疫沿丝绸之路从中亚传入欧洲，导致约2500-5000万人死亡，占欧洲人口的30%-60%。这场瘟疫彻底改变了欧洲的社会结构、劳动力市场和宗教信仰，间接催生了文艺复兴。",
+      en: "Between 1347 and 1352, bubonic plague spread from Central Asia along the Silk Road into Europe, killing 25-50 million people — 30-60% of Europe's population. It fundamentally reshaped European social structures, labor markets, and religious faith, indirectly catalyzing the Renaissance."
+    },
+    unpredictability: 9,
+    impact: 10,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Black_Death"
+  },
+  {
+    id: 50,
+    category: "world",
+    year: 1206,
+    title: { zh: "蒙古帝国崛起", en: "Rise of the Mongol Empire" },
+    description: {
+      zh: "成吉思汗统一蒙古各部后建立了人类历史上最大的连续陆地帝国，横跨欧亚大陆。蒙古铁骑以闪电般的速度征服了从中国到东欧的广大地区，造成约4000万人死亡，重塑了世界贸易路线和文化交流格局。",
+      en: "Genghis Khan united the Mongol tribes and built the largest contiguous land empire in history, spanning from China to Eastern Europe. The Mongol conquests killed an estimated 40 million people and reshaped global trade routes and cultural exchange."
+    },
+    unpredictability: 9,
+    impact: 10,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Mongol_Empire"
+  },
+  {
+    id: 51,
+    category: "world",
+    year: 79,
+    title: { zh: "庞贝城毁灭", en: "Destruction of Pompeii" },
+    description: {
+      zh: "公元79年，维苏威火山突然爆发，将繁华的罗马城市庞贝和赫库兰尼姆埋于数米厚的火山灰下，约2000人瞬间遇难。该城直到1748年才被重新发现，成为了解古罗马生活的最重要考古遗址。",
+      en: "In 79 AD, Mount Vesuvius erupted suddenly, burying the thriving Roman cities of Pompeii and Herculaneum under meters of volcanic ash, killing about 2,000 people instantly. The city was not rediscovered until 1748, becoming the most important archaeological site for understanding ancient Roman life."
+    },
+    unpredictability: 8,
+    impact: 7,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
+  },
+  {
+    id: 52,
+    category: "world",
+    year: 1453,
+    title: { zh: "君士坦丁堡陷落", en: "Fall of Constantinople" },
+    description: {
+      zh: "1453年奥斯曼帝国苏丹穆罕默德二世攻陷千年古都君士坦丁堡，终结了延续1100年的拜占庭帝国。这一事件标志着中世纪的终结，大量希腊学者西逃推动了文艺复兴，同时改变了东西方贸易格局，间接促成了大航海时代。",
+      en: "In 1453, Ottoman Sultan Mehmed II conquered Constantinople, ending the 1,100-year Byzantine Empire. This event marked the end of the Middle Ages, drove Greek scholars westward fueling the Renaissance, and disrupted East-West trade routes, indirectly spurring the Age of Exploration."
+    },
+    unpredictability: 7,
+    impact: 10,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+  },
+  {
+    id: 53,
+    category: "continental",
+    year: 1755,
+    title: { zh: "里斯本大地震", en: "Great Lisbon Earthquake" },
+    description: {
+      zh: "1755年万圣节，一场估计9级的大地震摧毁了葡萄牙首都里斯本，随后的海啸和大火导致约6万人死亡。这场灾难深刻影响了欧洲启蒙运动的哲学思想，伏尔泰和康德均对此进行了深入反思。",
+      en: "On All Saints' Day 1755, an estimated magnitude-9 earthquake destroyed Lisbon, Portugal. The subsequent tsunami and fires killed about 60,000 people. The disaster profoundly influenced Enlightenment philosophy, with Voltaire and Kant both reflecting deeply on its implications."
+    },
+    unpredictability: 9,
+    impact: 9,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake"
+  },
+  {
+    id: 54,
+    category: "world",
+    year: 1588,
+    title: { zh: "西班牙无敌舰队覆灭", en: "Defeat of the Spanish Armada" },
+    description: {
+      zh: "1588年，号称'无敌'的西班牙舰队在入侵英国时被击溃，一半战舰损失，约1.5万人丧生。这一事件标志着西班牙海上霸权的衰落和英国崛起的开端，深刻改变了欧洲乃至世界的力量格局。",
+      en: "In 1588, the 'Invincible' Spanish Armada was defeated while attempting to invade England, losing half its fleet and about 15,000 men. This marked the decline of Spanish naval supremacy and the rise of England, fundamentally shifting the European and global balance of power."
+    },
+    unpredictability: 8,
+    impact: 9,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Spanish_Armada"
+  },
+  {
+    id: 55,
+    category: "continental",
+    year: 1791,
+    title: { zh: "海地奴隶革命", en: "Haitian Revolution" },
+    description: {
+      zh: "1791年，法属圣多明戈的奴隶发动起义，经过13年斗争于1804年建立了海地共和国。这是人类历史上唯一一次奴隶起义成功建国的案例，震惊了整个殖民世界，深刻影响了拉丁美洲独立运动。",
+      en: "In 1791, enslaved people in French Saint-Domingue launched a revolution, establishing Haiti in 1804 after 13 years of struggle. It was the only successful slave revolt leading to an independent state in history, shocking the colonial world and profoundly influencing Latin American independence movements."
+    },
+    unpredictability: 9,
+    impact: 9,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Haitian_Revolution"
+  },
+
+  // ===== NEW EVENTS: SCIENTIFIC/TECHNOLOGICAL BREAKTHROUGHS =====
+  {
+    id: 56,
+    category: "world",
+    year: 1928,
+    title: { zh: "青霉素的意外发现", en: "Accidental Discovery of Penicillin" },
+    description: {
+      zh: "1928年，亚历山大·弗莱明在度假归来后发现培养皿上的霉菌杀死了周围的细菌，由此发现了青霉素。这一意外发现开创了抗生素时代，挽救了数亿人的生命，彻底改变了现代医学的面貌。",
+      en: "In 1928, Alexander Fleming returned from holiday to find mold on a petri dish had killed surrounding bacteria, leading to the discovery of penicillin. This accidental discovery launched the antibiotic era, saving hundreds of millions of lives and transforming modern medicine."
+    },
+    unpredictability: 9,
+    impact: 10,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Penicillin"
+  },
+  {
+    id: 57,
+    category: "world",
+    year: 1938,
+    title: { zh: "核裂变的发现", en: "Discovery of Nuclear Fission" },
+    description: {
+      zh: "1938年，德国化学家哈恩和斯特拉斯曼在用中子轰击铀时意外发现了核裂变现象，物理学家迈特纳和弗里施随后给出了理论解释。这一发现直接导致了原子弹和核能的开发，从根本上改变了地缘政治和能源格局。",
+      en: "In 1938, German chemists Hahn and Strassmann accidentally discovered nuclear fission while bombarding uranium with neutrons. Physicists Meitner and Frisch provided the theoretical explanation. This discovery directly led to atomic weapons and nuclear power, fundamentally changing geopolitics and energy."
+    },
+    unpredictability: 8,
+    impact: 10,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Discovery_of_nuclear_fission"
+  },
+  {
+    id: 58,
+    category: "world",
+    year: 1908,
+    title: { zh: "通古斯大爆炸", en: "Tunguska Event" },
+    description: {
+      zh: "1908年6月30日，西伯利亚偏远森林上空发生了相当于1000颗广岛原子弹威力的爆炸，夷平了2000平方公里的森林，却未留下任何陨石坑。如果这一爆炸发生在人口密集区域，后果将是毁灭性的。",
+      en: "On June 30, 1908, an explosion with the force of 1,000 Hiroshima bombs occurred over remote Siberian forests, flattening 2,000 square kilometers of trees yet leaving no crater. Had this explosion occurred over a populated area, the consequences would have been catastrophic."
+    },
+    unpredictability: 10,
+    impact: 6,
+    retrospectiveExplainability: 6,
+    wikiLink: "https://en.wikipedia.org/wiki/Tunguska_event"
+  },
+  {
+    id: 59,
+    category: "world",
+    year: 2025,
+    title: { zh: "DeepSeek R1震撼硅谷", en: "DeepSeek R1 Shocks Silicon Valley" },
+    description: {
+      zh: "2025年1月，中国杭州小型AI公司DeepSeek发布了R1推理模型，以不到600万美元的训练成本达到了与OpenAI旗舰模型相当的性能。消息公布后英伟达股价暴跌18%，动摇了'AI需要天量算力'的行业共识，证明中国AI能力远超西方预期。",
+      en: "In January 2025, small Chinese AI company DeepSeek released its R1 reasoning model, matching OpenAI's flagship performance at under $6 million training cost. Nvidia's stock dropped 18% on the news, shaking the industry consensus that AI requires massive compute, and proving China's AI capabilities far exceeded Western expectations."
+    },
+    unpredictability: 9,
+    impact: 8,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+
+  // ===== NEW EVENTS: MILITARY SURPRISES =====
+  {
+    id: 60,
+    category: "world",
+    year: 1941,
+    title: { zh: "珍珠港事件", en: "Attack on Pearl Harbor" },
+    description: {
+      zh: "1941年12月7日，日本海军出动353架飞机突袭美国太平洋舰队基地珍珠港，击沉击伤近20艘军舰和300多架飞机，造成2403人死亡。这次袭击直接将美国拖入二战，彻底改变了战争走向和世界格局。",
+      en: "On December 7, 1941, Japan launched a surprise attack on Pearl Harbor with 353 aircraft, sinking or damaging nearly 20 warships and over 300 planes, killing 2,403 Americans. The attack brought the US into WWII, fundamentally changing the war's trajectory and the global order."
+    },
+    unpredictability: 8,
+    impact: 10,
+    retrospectiveExplainability: 9,
+    wikiLink: "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
+  },
+  {
+    id: 61,
+    category: "continental",
+    year: 1973,
+    title: { zh: "赎罪日战争（第四次中东战争）", en: "Yom Kippur War" },
+    description: {
+      zh: "1973年10月6日，埃及和叙利亚在犹太教赎罪日当天对以色列发动突然袭击，以色列情报部门完全未能预警。战争初期以色列损失惨重，虽最终反败为胜，但这场战争引发了1973年石油危机，永久改变了中东地缘政治。",
+      en: "On October 6, 1973, Egypt and Syria launched a surprise attack on Israel during Yom Kippur, catching Israeli intelligence completely off guard. Despite early heavy losses, Israel ultimately prevailed, but the war triggered the 1973 oil crisis and permanently reshaped Middle Eastern geopolitics."
+    },
+    unpredictability: 8,
+    impact: 9,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Yom_Kippur_War"
+  },
+  {
+    id: 62,
+    category: "continental",
+    year: 1968,
+    title: { zh: "越南春节攻势", en: "Tet Offensive" },
+    description: {
+      zh: "1968年1月，北越和越共在越南春节期间对南越100多个城市同时发动大规模进攻，令美军和南越完全措手不及。虽然军事上未能成功，但其政治影响巨大，彻底扭转了美国国内对越战的支持，最终导致美国撤军。",
+      en: "In January 1968, North Vietnam and the Viet Cong launched simultaneous attacks on over 100 South Vietnamese cities during the Tet holiday, completely surprising US and ARVN forces. Though a military failure, its political impact was enormous, turning American public opinion against the war and ultimately leading to US withdrawal."
+    },
+    unpredictability: 8,
+    impact: 9,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Tet_Offensive"
+  },
+
+  // ===== NEW EVENTS: POLITICAL UPHEAVALS =====
+  {
+    id: 63,
+    category: "continental",
+    year: 1994,
+    title: { zh: "卢旺达大屠杀", en: "Rwandan Genocide" },
+    description: {
+      zh: "1994年4月至7月，卢旺达胡图族极端分子在100天内系统性屠杀了约50-80万图西族人。国际社会的冷漠和联合国的不作为令世界震惊，这场种族灭绝成为20世纪最黑暗的篇章之一。",
+      en: "From April to July 1994, Hutu extremists in Rwanda systematically killed an estimated 500,000-800,000 Tutsis in just 100 days. The international community's indifference and the UN's inaction shocked the world, making this genocide one of the darkest chapters of the 20th century."
+    },
+    unpredictability: 7,
+    impact: 9,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Rwandan_genocide"
+  },
+  {
+    id: 64,
+    category: "national",
+    year: 2021,
+    title: { zh: "缅甸军事政变", en: "Myanmar Military Coup" },
+    description: {
+      zh: "2021年2月1日，缅甸军方在昂山素季领导的民盟赢得压倒性选举胜利后发动政变，推翻民选政府并宣布紧急状态。这一事件终结了缅甸十年的民主化进程，引发大规模抗议和持续至今的内战。",
+      en: "On February 1, 2021, Myanmar's military staged a coup after Aung San Suu Kyi's NLD won a landslide election, overthrowing the democratic government and declaring a state of emergency. The coup ended a decade of democratization, sparking mass protests and an ongoing civil war."
+    },
+    unpredictability: 7,
+    impact: 8,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/2021_Myanmar_coup_d%27%C3%A9tat"
+  },
+  {
+    id: 65,
+    category: "continental",
+    year: 2023,
+    title: { zh: "尼日尔政变与萨赫勒多米诺效应", en: "Niger Coup and Sahel Domino Effect" },
+    description: {
+      zh: "2023年7月，尼日尔总统卫队扣押民选总统巴祖姆并发动政变。这是继马里(2020/2021)和布基纳法索(2022)之后萨赫勒地区的第三场政变，三国随后退出西非经济共同体并组建萨赫勒国家联盟，西方在非洲的影响力遭受重大打击。",
+      en: "In July 2023, Niger's presidential guard detained the elected president and staged a coup — the third in the Sahel after Mali (2020/2021) and Burkina Faso (2022). The three countries subsequently left ECOWAS and formed the Alliance of Sahel States, dealing a major blow to Western influence in Africa."
+    },
+    unpredictability: 7,
+    impact: 7,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/2023_Nigerien_coup_d%27%C3%A9tat"
+  },
+  {
+    id: 66,
+    category: "national",
+    year: 2022,
+    title: { zh: "斯里兰卡经济崩溃与总统出逃", en: "Sri Lanka Economic Collapse" },
+    description: {
+      zh: "2022年，斯里兰卡经济全面崩溃，通胀飙升至54.6%，食品价格暴涨81%，成为该国独立以来首次主权债务违约。大规模抗议迫使总统拉贾帕克萨于7月仓皇出逃，留下一个燃料、药品和食品严重短缺的国家。",
+      en: "In 2022, Sri Lanka's economy collapsed entirely — inflation soared to 54.6%, food prices surged 81%, and the country experienced its first sovereign default since independence. Mass protests forced President Rajapaksa to flee the country in July, leaving behind severe shortages of fuel, medicine, and food."
+    },
+    unpredictability: 7,
+    impact: 7,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Sri_Lankan_economic_crisis_(2019%E2%80%932024)"
+  },
+  {
+    id: 67,
+    category: "national",
+    year: 1973,
+    title: { zh: "智利军事政变推翻阿连德", en: "Chilean Military Coup Against Allende" },
+    description: {
+      zh: "1973年9月11日，皮诺切特将军发动军事政变推翻民选总统阿连德，阿连德在总统府内身亡。政变开启了长达17年的军事独裁统治，数千人被杀害或失踪，成为冷战期间拉美政治最黑暗的篇章之一。",
+      en: "On September 11, 1973, General Pinochet overthrew democratically elected President Allende in a military coup. Allende died in the presidential palace. The coup initiated 17 years of military dictatorship during which thousands were killed or disappeared, becoming one of Latin America's darkest Cold War chapters."
+    },
+    unpredictability: 6,
+    impact: 8,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/1973_Chilean_coup_d%27%C3%A9tat"
+  },
+  {
+    id: 68,
+    category: "national",
+    year: 2024,
+    title: { zh: "韩国戒严风波", en: "South Korea Martial Law Crisis" },
+    description: {
+      zh: "2024年12月3日，韩国总统尹锡悦突然宣布戒严令，指控在野党从事'反国家活动'。190名国会议员紧急集结并在数小时内投票解除戒严，戒严仅持续约6小时。尹锡悦最终因叛乱罪被判处无期徒刑，成为韩国民主史上最荒诞的一幕。",
+      en: "On December 3, 2024, South Korean President Yoon Suk Yeol suddenly declared martial law, accusing the opposition of 'anti-state activities.' 190 legislators gathered at the National Assembly and voted to lift it within hours — martial law lasted only about 6 hours. Yoon was ultimately sentenced to life in prison for insurrection, making it one of the most surreal episodes in Korean democratic history."
+    },
+    unpredictability: 9,
+    impact: 8,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/2024_South_Korean_martial_law_crisis"
+  },
+  {
+    id: 69,
+    category: "national",
+    year: 2024,
+    title: { zh: "阿萨德政权闪电式崩塌", en: "Lightning Collapse of the Assad Regime" },
+    description: {
+      zh: "2024年12月8日，叙利亚反对派武装在仅10天的闪电攻势后推翻了执政53年的阿萨德家族政权。阿萨德仓皇逃往俄罗斯。政权军队几乎未做抵抗便土崩瓦解，其速度之快令全世界震惊，深刻改变了中东地缘政治格局。",
+      en: "On December 8, 2024, Syrian opposition forces toppled the 53-year Assad dynasty after just a 10-day lightning offensive. Assad fled to Russia. Regime forces collapsed with almost no resistance at a speed that shocked the world, profoundly reshaping Middle Eastern geopolitics."
+    },
+    unpredictability: 9,
+    impact: 9,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Fall_of_the_Assad_regime"
+  },
+  {
+    id: 70,
+    category: "national",
+    year: 1975,
+    title: { zh: "柬埔寨红色高棉大屠杀", en: "Khmer Rouge Genocide in Cambodia" },
+    description: {
+      zh: "1975年红色高棉夺取政权后，在不到四年时间里通过强制劳动、饥荒和大规模处决杀害了约200万柬埔寨人，占全国人口的四分之一。这场由极端意识形态驱动的社会实验造成了20世纪最惨烈的人道灾难之一。",
+      en: "After seizing power in 1975, the Khmer Rouge killed approximately 2 million Cambodians — one quarter of the population — through forced labor, famine, and mass executions in under four years. This extreme ideological social experiment produced one of the 20th century's worst humanitarian catastrophes."
+    },
+    unpredictability: 7,
+    impact: 9,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Cambodian_genocide"
+  },
+
+  // ===== NEW EVENTS: ECONOMIC =====
+  {
+    id: 71,
+    category: "world",
+    year: 2025,
+    title: { zh: "特朗普'解放日'关税震荡", en: "Trump 'Liberation Day' Tariff Shock" },
+    description: {
+      zh: "2025年4月2日，特朗普宣布'解放日'，对所有进口商品征收10%的基础关税，对数十个国家额外加征更高关税，为自1930年斯穆特-霍利关税法以来最大规模的关税上调。2026年2月最高法院裁定其中部分关税违宪，但已造成平均每户1700美元的额外负担和8.9万个制造业岗位流失。",
+      en: "On April 2, 2025, Trump declared 'Liberation Day,' imposing a 10% baseline tariff on all imports plus higher tariffs on dozens of countries — the largest tariff hike since the 1930 Smoot-Hawley Act. The Supreme Court ruled parts unconstitutional in February 2026, but not before costing households an extra $1,700 and 89,000 manufacturing jobs."
+    },
+    unpredictability: 7,
+    impact: 9,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Liberation_Day_tariffs"
+  },
+  {
+    id: 72,
+    category: "national",
+    year: 2018,
+    title: { zh: "土耳其里拉崩盘", en: "Turkish Lira Currency Crisis" },
+    description: {
+      zh: "2018年，土耳其里拉在数月内暴跌超过40%，从1美元兑4里拉跌至7.22里拉。埃尔多安总统坚持非正统的低利率政策加剧了危机，引发新兴市场连锁恐慌，波及黎巴嫩、南非等国。",
+      en: "In 2018, the Turkish lira plunged over 40% in months, from 4 to 7.22 per dollar. President Erdogan's insistence on unorthodox low interest rates exacerbated the crisis, triggering contagion fears across emerging markets including Lebanon and South Africa."
+    },
+    unpredictability: 6,
+    impact: 7,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Turkish_economic_crisis_(2018%E2%80%93current)"
+  },
+  {
+    id: 73,
+    category: "world",
+    year: 1883,
+    title: { zh: "喀拉喀托火山大爆发", en: "Eruption of Krakatoa" },
+    description: {
+      zh: "1883年8月27日，印尼喀拉喀托火山发生了人类有记录以来最猛烈的火山爆发之一，爆炸声传遍了全球三分之一的地表。引发的海啸高达30米，造成约3.6万人死亡，喷发物遮蔽阳光导致全球平均温度下降1.2度，持续数年。",
+      en: "On August 27, 1883, Indonesia's Krakatoa volcano produced one of the most violent eruptions in recorded history — the sound was heard across one-third of Earth's surface. The resulting 30-meter tsunami killed about 36,000 people, and ejected material lowered global temperatures by 1.2°C for years."
+    },
+    unpredictability: 8,
+    impact: 8,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/1883_eruption_of_Krakatoa"
+  },
+
+  // ===== NEW EVENTS: NATURAL DISASTERS =====
+  {
+    id: 74,
+    category: "continental",
+    year: 2010,
+    title: { zh: "冰岛火山灰瘫痪欧洲航空", en: "Eyjafjallajokull Eruption Shuts Down European Airspace" },
+    description: {
+      zh: "2010年4月，冰岛埃亚菲亚德拉冰盖火山喷发产生的火山灰云导致欧洲航空史上二战以来最大规模的空域关闭。超过10万架次航班被取消，700万旅客滞留，航空公司损失达17亿美元。讽刺的是，这次喷发在火山学意义上只是一次中小规模事件。",
+      en: "In April 2010, ash from Iceland's Eyjafjallajokull volcano caused the largest airspace closure since WWII. Over 100,000 flights were cancelled, 7 million passengers stranded, and airlines lost $1.7 billion. Ironically, the eruption was only moderate in volcanological terms — a classic example of disproportionate systemic impact."
+    },
+    unpredictability: 9,
+    impact: 7,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Air_travel_disruption_after_the_2010_Eyjafjallaj%C3%B6kull_eruption"
+  },
+  {
+    id: 75,
+    category: "world",
+    year: 2022,
+    title: { zh: "汤加海底火山大爆发", en: "Hunga Tonga Submarine Volcanic Eruption" },
+    description: {
+      zh: "2022年1月15日，汤加洪阿哈阿帕伊海底火山发生大规模喷发，产生了现代仪器记录到的最大大气爆炸。爆发引发的海啸波及太平洋沿岸十多个国家，汤加通信电缆被切断，整个国家与世隔绝数周。",
+      en: "On January 15, 2022, the Hunga Tonga-Hunga Ha'apai submarine volcano produced the largest atmospheric explosion recorded by modern instruments. The eruption generated tsunamis affecting over a dozen Pacific nations and severed Tonga's communications cables, isolating the entire nation for weeks."
+    },
+    unpredictability: 9,
+    impact: 7,
+    retrospectiveExplainability: 6,
+    wikiLink: "https://en.wikipedia.org/wiki/2022_Hunga_Tonga%E2%80%93Hunga_Ha%CA%BBapai_eruption_and_tsunami"
+  },
+
+  // ===== NEW EVENTS: PANDEMIC/HEALTH =====
+  {
+    id: 76,
+    category: "world",
+    year: 1981,
+    title: { zh: "HIV/AIDS全球大流行", en: "HIV/AIDS Pandemic" },
+    description: {
+      zh: "1981年首次被识别的HIV/AIDS在随后几十年演变为全球性大流行，至今已感染超过7000万人、导致超过3500万人死亡。这种源自黑猩猩的病毒彻底改变了公共卫生体系、性行为规范和社会对传染病的认知。",
+      en: "First identified in 1981, HIV/AIDS became a global pandemic infecting over 70 million people and killing over 35 million to date. This virus, originating from chimpanzees, fundamentally changed public health systems, sexual behavior norms, and society's understanding of infectious disease."
+    },
+    unpredictability: 9,
+    impact: 10,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/HIV/AIDS"
+  },
+  {
+    id: 77,
+    category: "continental",
+    year: 2014,
+    title: { zh: "西非埃博拉疫情大爆发", en: "West African Ebola Epidemic" },
+    description: {
+      zh: "2013-2016年间，埃博拉病毒在西非爆发，感染约2.8万人、导致1.1万人死亡，病例数是此前所有埃博拉疫情总和的100倍。这是埃博拉首次在城市大规模传播并跨越国境，暴露了全球公共卫生应急体系的严重不足。",
+      en: "Between 2013 and 2016, Ebola ravaged West Africa, infecting about 28,000 and killing 11,000 — 100 times more cases than all previous Ebola outbreaks combined. It was the first time Ebola spread extensively in cities and across borders, exposing severe gaps in global public health emergency systems."
+    },
+    unpredictability: 8,
+    impact: 8,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Western_African_Ebola_virus_epidemic"
+  },
+  {
+    id: 78,
+    category: "world",
+    year: 2022,
+    title: { zh: "猴痘全球意外扩散", en: "Global Mpox Outbreak" },
+    description: {
+      zh: "2022年5月，原本仅限于中西非地区的猴痘（mpox）突然在全球多国出现社区传播，这是该病毒首次大规模在非洲以外扩散。世卫组织于7月宣布其为国际关注的突发公共卫生事件，最终在110多个国家报告了超过8.7万例病例。",
+      en: "In May 2022, mpox — previously confined to Central and West Africa — suddenly appeared in community transmission across multiple countries globally for the first time. The WHO declared a public health emergency in July, with over 87,000 cases eventually reported across 110+ countries."
+    },
+    unpredictability: 8,
+    impact: 6,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/2022%E2%80%932023_mpox_outbreak"
+  },
+
+  // ===== NEW EVENTS: CORPORATE/INSTITUTIONAL =====
+  {
+    id: 79,
+    category: "institutional",
+    year: 2008,
+    title: { zh: "麦道夫庞氏骗局曝光", en: "Madoff Ponzi Scheme Exposed" },
+    description: {
+      zh: "2008年12月，伯纳德·麦道夫被揭露经营着人类历史上最大的庞氏骗局，涉案金额高达648亿美元，受害者包括4800名投资者。美国证监会此前多次调查却未能发现骗局，麦道夫最终被判处150年监禁。",
+      en: "In December 2008, Bernard Madoff was exposed as running the largest Ponzi scheme in history, totaling $64.8 billion and defrauding 4,800 investors. The SEC had investigated multiple times without detecting the fraud. Madoff was sentenced to 150 years in prison."
+    },
+    unpredictability: 8,
+    impact: 8,
+    retrospectiveExplainability: 9,
+    wikiLink: "https://en.wikipedia.org/wiki/Madoff_investment_scandal"
+  },
+  {
+    id: 80,
+    category: "institutional",
+    year: 2020,
+    title: { zh: "Wirecard会计造假崩盘", en: "Wirecard Accounting Fraud Collapse" },
+    description: {
+      zh: "2020年6月，德国DAX指数成分股Wirecard在承认19亿欧元'凭空消失'后申请破产，成为首家破产的DAX30成分股公司。尽管《金融时报》多年来持续报道其财务造假嫌疑，德国监管机构BaFin却反而打击做空者保护该公司。",
+      en: "In June 2020, German DAX member Wirecard filed for insolvency after admitting that EUR 1.9 billion had 'gone missing,' becoming the first DAX 30 company ever to go bankrupt. Despite years of Financial Times reporting on fraud allegations, German regulator BaFin had instead attacked short-sellers to protect the company."
+    },
+    unpredictability: 7,
+    impact: 7,
+    retrospectiveExplainability: 9,
+    wikiLink: "https://en.wikipedia.org/wiki/Wirecard_scandal"
+  },
+  {
+    id: 81,
+    category: "institutional",
+    year: 2015,
+    title: { zh: "Theranos血液检测骗局", en: "Theranos Blood Testing Fraud" },
+    description: {
+      zh: "Theranos创始人伊丽莎白·霍姆斯声称发明了革命性的微量血液检测技术，公司估值一度高达90亿美元。2015年《华尔街日报》揭露其技术从未真正工作，霍姆斯最终因欺诈罪被判处11年监禁，成为硅谷'假装成功直到成功'文化的最大丑闻。",
+      en: "Theranos founder Elizabeth Holmes claimed to have invented revolutionary blood testing using just drops of blood, reaching a $9 billion valuation. In 2015, The Wall Street Journal exposed the technology as non-functional. Holmes was sentenced to 11+ years in prison for fraud, becoming Silicon Valley's biggest 'fake it till you make it' scandal."
+    },
+    unpredictability: 7,
+    impact: 7,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Theranos"
+  },
+  {
+    id: 82,
+    category: "institutional",
+    year: 2019,
+    title: { zh: "波音737 MAX空难丑闻", en: "Boeing 737 MAX Crashes Scandal" },
+    description: {
+      zh: "2018年10月和2019年3月，两架波音737 MAX客机先后坠毁，共造成346人死亡。调查揭露波音为节省成本隐瞒了关键的MCAS飞控系统缺陷，并欺骗了FAA监管机构。全球所有737 MAX被停飞近两年，波音面临数十亿美元的罚款和赔偿。",
+      en: "In October 2018 and March 2019, two Boeing 737 MAX aircraft crashed, killing all 346 people aboard. Investigations revealed Boeing had concealed critical MCAS flight control system flaws to save costs and deceived the FAA. All 737 MAX aircraft were grounded worldwide for nearly two years, with Boeing facing billions in fines and compensation."
+    },
+    unpredictability: 7,
+    impact: 8,
+    retrospectiveExplainability: 9,
+    wikiLink: "https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings"
+  },
+  {
+    id: 83,
+    category: "world",
+    year: 2024,
+    title: { zh: "CrowdStrike更新引发全球IT瘫痪", en: "CrowdStrike Update Causes Global IT Outage" },
+    description: {
+      zh: "2024年7月19日，网络安全公司CrowdStrike的一次错误软件更新导致全球约850万台Windows系统崩溃蓝屏，成为信息技术史上最大规模的宕机事件。航空、银行、医院、媒体和政府服务大面积瘫痪，美国财富500强公司损失估计达54亿美元。",
+      en: "On July 19, 2024, a faulty CrowdStrike software update crashed approximately 8.5 million Windows systems globally — the largest IT outage in history. Airlines, banks, hospitals, media, and government services were massively disrupted, costing US Fortune 500 companies an estimated $5.4 billion."
+    },
+    unpredictability: 9,
+    impact: 8,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages"
+  },
+
+  // ===== NEW EVENTS: SPORTS/CULTURAL SHOCKS =====
+  {
+    id: 84,
+    category: "industry",
+    year: 1980,
+    title: { zh: "冰上奇迹：美国击败苏联冰球队", en: "Miracle on Ice" },
+    description: {
+      zh: "1980年冬奥会上，由大学生组成的美国冰球队以4-3击败了四届奥运金牌得主、由职业球员组成的苏联队。这被认为是体育史上最大的冷门之一，在冷战背景下具有巨大的象征意义，极大地鼓舞了美国民众士气。",
+      en: "At the 1980 Winter Olympics, a team of American college players defeated the four-time gold medal Soviet professional hockey team 4-3. Considered one of the greatest sports upsets in history, it carried enormous symbolic significance during the Cold War and greatly boosted American morale."
+    },
+    unpredictability: 10,
+    impact: 7,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Miracle_on_Ice"
+  },
+  {
+    id: 85,
+    category: "industry",
+    year: 2016,
+    title: { zh: "莱斯特城奇迹夺冠", en: "Leicester City's Miracle Premier League Title" },
+    description: {
+      zh: "2015-16赛季，前一年差点降级的莱斯特城以5000:1的赔率赢得英超联赛冠军，创造了现代足球乃至整个体育史上最不可思议的奇迹。这一事件证明了在高度竞争的职业体育中，极端不可能的事件确实会发生。",
+      en: "In the 2015-16 season, Leicester City — who nearly got relegated the previous year — won the Premier League at 5,000-to-1 odds, creating arguably the greatest miracle in modern sports history. It proved that extremely unlikely events do occur even in highly competitive professional sports."
+    },
+    unpredictability: 10,
+    impact: 6,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Leicester_City_F.C._in_the_2015%E2%80%9316_season"
+  },
+  {
+    id: 86,
+    category: "industry",
+    year: 2022,
+    title: { zh: "沙特阿拉伯世界杯击败阿根廷", en: "Saudi Arabia Defeats Argentina at World Cup" },
+    description: {
+      zh: "2022年卡塔尔世界杯小组赛中，沙特阿拉伯以2-1逆转击败由梅西领衔的夺冠热门阿根廷队，创造了世界杯历史上最大的冷门之一。沙特政府随即宣布全国放假一天庆祝这一历史性胜利。",
+      en: "In the 2022 FIFA World Cup group stage, Saudi Arabia stunned tournament favorites Argentina 2-1 in a shocking comeback, creating one of the greatest upsets in World Cup history. The Saudi government declared a national holiday to celebrate the historic victory."
+    },
+    unpredictability: 9,
+    impact: 5,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Argentina_v_Saudi_Arabia_(2022_FIFA_World_Cup)"
+  },
+  {
+    id: 87,
+    category: "industry",
+    year: 1990,
+    title: { zh: "道格拉斯击倒泰森", en: "Buster Douglas Knocks Out Mike Tyson" },
+    description: {
+      zh: "1990年2月，42:1的大冷门选手巴斯特·道格拉斯在东京击倒了被认为不可战胜的世界重量级拳王迈克·泰森，夺得世界冠军。这是拳击史上最大的冷门，泰森此前37场职业比赛从未被击倒过。",
+      en: "In February 1990, 42-to-1 underdog Buster Douglas knocked out the seemingly invincible world heavyweight champion Mike Tyson in Tokyo. It remains the biggest upset in boxing history — Tyson had never been knocked down in his 37 previous professional fights."
+    },
+    unpredictability: 10,
+    impact: 6,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Buster_Douglas_vs._Mike_Tyson"
+  },
+  {
+    id: 88,
+    category: "industry",
+    year: 2015,
+    title: { zh: "日本橄榄球爆冷击败南非", en: "Japan's Stunning Rugby Upset Over South Africa" },
+    description: {
+      zh: "2015年橄榄球世界杯上，日本队在比赛最后时刻以34-32击败两届世界冠军南非队，被BBC称为'体育史上最大的冷门'。日本此前在世界杯历史上仅赢过一场比赛，这场胜利开启了日本橄榄球的崛起之路。",
+      en: "At the 2015 Rugby World Cup, Japan defeated two-time champions South Africa 34-32 with a try in the dying moments, called 'the greatest upset in sports history' by the BBC. Japan had won only one previous World Cup match in their entire history; this victory launched Japan's rugby renaissance."
+    },
+    unpredictability: 10,
+    impact: 6,
+    retrospectiveExplainability: 6,
+    wikiLink: "https://en.wikipedia.org/wiki/Japan_v_South_Africa_(2015_Rugby_World_Cup)"
+  },
+
+  // ===== NEW EVENTS: SUPPLY CHAIN/INFRASTRUCTURE =====
+  {
+    id: 89,
+    category: "world",
+    year: 2021,
+    title: { zh: "长赐号堵塞苏伊士运河", en: "Ever Given Blocks the Suez Canal" },
+    description: {
+      zh: "2021年3月，巨型集装箱船'长赐号'在苏伊士运河搁浅，堵塞了全球最重要的航运通道长达6天。432艘船舶被困，每天约90亿美元的贸易受阻，全球供应链损失约1370亿美元。一艘船便暴露了全球化供应链的极端脆弱性。",
+      en: "In March 2021, the mega container ship 'Ever Given' ran aground in the Suez Canal, blocking the world's most critical shipping lane for six days. 432 vessels were trapped, $9 billion in daily trade was disrupted, and global supply chain losses totaled about $137 billion. One ship exposed the extreme fragility of globalized supply chains."
+    },
+    unpredictability: 9,
+    impact: 7,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction"
+  },
+
+  // ===== NEW EVENTS: MORE HISTORICAL =====
+  {
+    id: 90,
+    category: "world",
+    year: 1492,
+    title: { zh: "哥伦布发现新大陆", en: "Columbus Reaches the Americas" },
+    description: {
+      zh: "1492年，哥伦布在寻找通往亚洲的西行航线时意外到达美洲大陆。这一发现引发了殖民时代、跨大西洋奴隶贸易和'哥伦布大交换'——旧大陆的疾病导致美洲原住民人口减少了约90%，从根本上改变了人类文明的进程。",
+      en: "In 1492, Columbus accidentally reached the Americas while seeking a westward route to Asia. This triggered the colonial era, the transatlantic slave trade, and the 'Columbian Exchange' — Old World diseases killed approximately 90% of indigenous Americans, fundamentally altering the course of human civilization."
+    },
+    unpredictability: 8,
+    impact: 10,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"
+  },
+  {
+    id: 91,
+    category: "world",
+    year: 1789,
+    title: { zh: "法国大革命爆发", en: "French Revolution" },
+    description: {
+      zh: "1789年法国大革命推翻了延续千年的君主制度，提出了'自由、平等、博爱'的理念。革命引发了拿破仑战争，重塑了整个欧洲的政治版图，其思想影响了此后两个世纪全球范围内的民主运动和革命浪潮。",
+      en: "The 1789 French Revolution overthrew a millennium-old monarchy, proclaiming 'Liberty, Equality, Fraternity.' It triggered the Napoleonic Wars, reshaped Europe's political map, and its ideals influenced democratic movements and revolutions worldwide for the next two centuries."
+    },
+    unpredictability: 7,
+    impact: 10,
+    retrospectiveExplainability: 9,
+    wikiLink: "https://en.wikipedia.org/wiki/French_Revolution"
+  },
+  {
+    id: 92,
+    category: "continental",
+    year: 1986,
+    title: { zh: "挑战者号航天飞机爆炸", en: "Space Shuttle Challenger Disaster" },
+    description: {
+      zh: "1986年1月28日，挑战者号航天飞机在发射后73秒爆炸解体，7名宇航员全部遇难，其中包括首位参与太空任务的教师麦考利夫。数百万观众通过电视直播目睹了这一悲剧。调查发现O型密封圈在低温下失效是直接原因，NASA的组织文化和决策失误受到严厉批评。",
+      en: "On January 28, 1986, the Space Shuttle Challenger broke apart 73 seconds after launch, killing all 7 crew members including teacher Christa McAuliffe. Millions watched the tragedy on live TV. The investigation found O-ring seal failure in cold weather was the direct cause, and NASA's organizational culture and decision-making were severely criticized."
+    },
+    unpredictability: 8,
+    impact: 8,
+    retrospectiveExplainability: 9,
+    wikiLink: "https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster"
+  },
+  {
+    id: 93,
+    category: "national",
+    year: 1947,
+    title: { zh: "印巴分治", en: "Partition of India" },
+    description: {
+      zh: "1947年英国撤离印度时，将南亚次大陆仓促分割为印度和巴基斯坦两个国家，引发了人类历史上最大规模的人口迁徙——约1500万人流离失所，100-200万人在宗教冲突中丧生。这一分治的遗产至今仍影响着南亚地缘政治。",
+      en: "When Britain withdrew from India in 1947, the hasty partition of the subcontinent into India and Pakistan triggered the largest mass migration in human history — about 15 million displaced and 1-2 million killed in religious violence. The partition's legacy continues to shape South Asian geopolitics to this day."
+    },
+    unpredictability: 6,
+    impact: 10,
+    retrospectiveExplainability: 8,
+    wikiLink: "https://en.wikipedia.org/wiki/Partition_of_India"
+  },
+  {
+    id: 94,
+    category: "national",
+    year: 1965,
+    title: { zh: "印尼九三零事件", en: "Indonesian Mass Killings of 1965-66" },
+    description: {
+      zh: "1965年9月30日政变未遂后，印尼军方在苏哈托领导下发动了针对共产党及其同情者的大规模屠杀，估计50万至100万人遇难。这场清洗彻底改变了印尼的政治走向，苏哈托由此建立了长达32年的威权统治。",
+      en: "After a failed coup on September 30, 1965, the Indonesian military under Suharto launched mass killings targeting communists and sympathizers, with an estimated 500,000 to 1 million killed. This purge fundamentally altered Indonesia's political trajectory, with Suharto establishing 32 years of authoritarian rule."
+    },
+    unpredictability: 7,
+    impact: 9,
+    retrospectiveExplainability: 7,
+    wikiLink: "https://en.wikipedia.org/wiki/Indonesian_mass_killings_of_1965%E2%80%9366"
   }
 ];
 
